@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "name": "Fireball",
+    "level": 3,
+    "school": "Evocation",
+    "castingTime": "1 Action",
+    "range": "150 feet",
+    "duration": "Instantaneous",
+    "description": "A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame."
+  },
+  {
+    "id": "2",
+    "name": "Magic Missile",
+    "level": 1,
+    "school": "Evocation",
+    "castingTime": "1 Action",
+    "range": "120 feet",
+    "duration": "Instantaneous",
+    "description": "You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range."
+  },
+  {
+    "id": "3",
+    "name": "Shield",
+    "level": 1,
+    "school": "Abjuration",
+    "castingTime": "1 Reaction",
+    "range": "Self",
+    "duration": "1 Round",
+    "description": "An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC."
+  },
+  {
+    "id": "4",
+    "name": "Cure Wounds",
+    "level": 1,
+    "school": "Evocation",
+    "castingTime": "1 Action",
+    "range": "Touch",
+    "duration": "Instantaneous",
+    "description": "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier."
+  },
+  {
+    "id": "5",
+    "name": "Invisibility",
+    "level": 2,
+    "school": "Illusion",
+    "castingTime": "1 Action",
+    "range": "Touch",
+    "duration": "Concentration, up to 1 hour",
+    "description": "A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person."
+  },
+  {
+    "id": "6",
+    "name": "Misty Step",
+    "level": 2,
+    "school": "Conjuration",
+    "castingTime": "1 Bonus Action",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "description": "Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see."
+  }
+]
