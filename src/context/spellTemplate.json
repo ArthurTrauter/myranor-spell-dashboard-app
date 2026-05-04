@@ -1,0 +1,193 @@
+[
+  {
+    "name": "Ablenkender Schmerz",
+    "level": 0,
+    "school": "Verzauberung",
+    "is_ritual": false,
+    "sources": [
+      "Alle"
+    ],
+    "casting_time": {
+      "base_time": "1 Aktion",
+      "condition": null
+    },
+    "range": {
+      "distance": "18 m",
+      "area_shape": null,
+      "area_size": null
+    },
+    "components": {
+      "verbal": true,
+      "somatic": false,
+      "material": false,
+      "material_details": null,
+      "material_cost": null,
+      "is_consumed": false
+    },
+    "duration": {
+      "time": "Unmittelbar",
+      "concentration": false
+    },
+    "description": "Eine Kreatur in Reichweite wird von kleinen, aber schmerzhaften Stichen der Quellenessenz, wie Schnitten, Verbrennungen oder emotionaler Aufruhr, gepeinigt. Die Kreatur muss einen Rettungswurf (Schaden) nach Quelle ablegen, oder sie erleidet 1W6 Schaden nach Quelle und ist beim nächsten Angriffswurf, den sie bis zum Ende ihres nächsten Zuges ausführt, im Nachteil [1].",
+    "at_higher_levels": null,
+    "cantrip_upgrade": "Der Schaden wird um jeweils 1W6 erhöht, wenn du die 5. (2W6), die 11. (3W6) und die 17. (4W6) Stufe erreichst [1].",
+    "optional_specifics": {}
+  },
+  {
+    "name": "Ausspähung",
+    "level": 5,
+    "school": "Erkenntnis",
+    "is_ritual": false,
+    "sources": [
+      "Erkenntnis", "Harmonie", "Totenwesen", "Tiergeister", "Iryabaar", "Tyakaar", "Xolovar"
+    ],
+    "casting_time": {
+      "base_time": "10 Minuten",
+      "condition": null
+    },
+    "range": {
+      "distance": "Selbst",
+      "area_shape": null,
+      "area_size": null
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true,
+      "material_details": "Zaubermaterialien im Wert von 100 Au, die beim Wirken des Zaubers verbraucht werden",
+      "material_cost": "100 Au",
+      "is_consumed": true
+    },
+    "duration": {
+      "time": "bis zu 10 Minuten",
+      "concentration": true
+    },
+    "description": "Du konzentrierst dich auf eine Person, die sich in derselben Sphäre oder Globule wie du befinden muss. Das Ziel muss einen WEI-Rettungswurf ablegen. Wenn das Ziel weiß, dass du den Zauber wirkst und beobachtet werden will, kann es den Wurf absichtlich misslingen lassen. Bei einem misslungenen Rettungswurf kannst du durch einen unsichtbaren Sensor im Umkreis von 3 Metern sehen und hören als wärst du vor Ort [2].",
+    "at_higher_levels": null,
+    "cantrip_upgrade": null,
+    "optional_specifics": {
+      "tables": [
+        {
+          "table_name": "Rettungswurf-Modifikatoren nach Wissen und Verbindung",
+          "columns": ["Wissen", "RW-Modifikator", "Verbindung", "RW-Modifikator"],
+          "rows": [
+            ["Aus zweiter Hand / Vom Ziel gehört", "+5", "Abbild oder Portrait", "-2"],
+            ["Aus erster Hand / Ziel getroffen", "+0", "Besitztum oder Kleidungsstück", "-4"],
+            ["Vertraut / Kennt das Ziel gut", "-5", "Körperteil, Haarsträhne, Fingernagel oder Ähnliches", "-10"]
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Federfall",
+    "level": 1,
+    "school": "Verwandlung",
+    "is_ritual": false,
+    "sources": [
+      "Luft", "Kraft", "Tesephai"
+    ],
+    "casting_time": {
+      "base_time": "1 Reaktion",
+      "condition": "die du ausführst, wenn eine Kreatur im Umkreis von 18 Metern um dich fällt"
+    },
+    "range": {
+      "distance": "18 m",
+      "area_shape": null,
+      "area_size": null
+    },
+    "components": {
+      "verbal": true,
+      "somatic": false,
+      "material": false,
+      "material_details": null,
+      "material_cost": null,
+      "is_consumed": false
+    },
+    "duration": {
+      "time": "1 Minute",
+      "concentration": false
+    },
+    "description": "Wähle bis zu fünf fallende Kreaturen in Reichweite. Ihre Fallgeschwindigkeit verlangsamt sich für die Wirkungsdauer auf 18 Meter pro Runde. Landet eine Kreatur, bevor der Zauber endet, kann sie auf ihren Füßen landen und erleidet keinen Sturzschaden [3].",
+    "at_higher_levels": null,
+    "cantrip_upgrade": null,
+    "optional_specifics": {}
+  },
+  {
+    "name": "Reittier finden",
+    "level": 2,
+    "school": "Beschwörung",
+    "is_ritual": false,
+    "sources": [
+      "Eis", "Erz", "Humus", "Tiergeister", "Aggari", "Galkuzul", "Ghorgumor", "Khalyanar", "Naggarach"
+    ],
+    "casting_time": {
+      "base_time": "10 Minuten",
+      "condition": null
+    },
+    "range": {
+      "distance": "9 m",
+      "area_shape": null,
+      "area_size": null
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": false,
+      "material_details": null,
+      "material_cost": null,
+      "is_consumed": false
+    },
+    "duration": {
+      "time": "Unmittelbar",
+      "concentration": false
+    },
+    "description": "Du beschwörst einen Geist, der die Gestalt eines ungewöhnlich intelligenten, starken und treuen Reittiers annimmt. Das Reittier verschwindet, wenn seine Trefferpunkte auf 0 sinken oder wenn du stirbst [4, 5].",
+    "at_higher_levels": "Verwende den Zauberplatzgrad als Zaubergrad im Wertekasten [5].",
+    "cantrip_upgrade": null,
+    "optional_specifics": {
+      "stat_blocks": [
+        {
+          "creature_name": "Geister-Reittier",
+          "type": "Großes Elementar, Feenwesen oder Dämon",
+          "armor_class": "10 + 1 pro Zaubergrad",
+          "hit_points": "5 + 10 pro Zaubergrad",
+          "speed": "18 m, Fliegen 18 m (erfordert einen Zauber des mindestens 4. Grades)",
+          "stats": {
+            "STR": "+4",
+            "DEX": "+1",
+            "CON": "+2",
+            "INT": "-2",
+            "WIS": "+1",
+            "CHA": "-1"
+          },
+          "skills": ["Wahrnehmung +1", "Heimlichkeit +1"],
+          "senses": [],
+          "languages": ["Telepathie auf 1,5 km (nur mit dir)"],
+          "traits": [
+            {
+              "name": "Lebensbindung",
+              "description": "Wenn du Trefferpunkte durch einen Zauber ab dem 1. Grad zurück erhältst, erhält das Reittier die gleiche Anzahl von Trefferpunkten zurück, sofern du dich im Abstand von bis zu 1,5 Metern von ihm befindest."
+            }
+          ],
+          "actions": [
+            {
+              "name": "Außerweltlicher Hieb",
+              "description": "Nahkampfangriffswurf: Bonus in Höhe deines Angriffszauber-Modifikators, Reichweite 1,5 Meter. Treffer: 1W8 + Zaubergrad Schaden nach Quelle."
+            }
+          ],
+          "bonus_actions": [
+            {
+              "name": "Geisterschrei",
+              "description": "WEI-Rettungswurf, eine Kreatur im Abstand von bis zu 18 Metern. Misserfolg: Das Ziel ist bis zum Ende deines nächsten Zugs verängstigt (wird nach langer Rast aufgeladen)."
+            },
+            {
+              "name": "Heilende Berührung",
+              "description": "Nur Humus, ersetzt Geisterschrei. Eine Kreatur im Abstand von bis zu 1,5 Metern erhält 2W8 + Zaubergrad Trefferpunkte zurück."
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

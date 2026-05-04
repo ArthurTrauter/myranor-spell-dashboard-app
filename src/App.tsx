@@ -1,73 +1,79 @@
 import { useState } from 'react';
 import { useSpells } from './context/SpellContext';
 import { SpellList } from './components/SpellList';
-import { ImportView } from './components/ImportView';
 
 function App() {
   const { spells, deck, favorites } = useSpells();
-  const [activeTab, setActiveTab] = useState<'catalog' | 'deck' | 'favorites' | 'import'>('catalog');
+  const [activeTab, setActiveTab] = useState<'catalog' | 'deck' | 'favorites'>('catalog');
   const [searchQuery, setSearchQuery] = useState('');
+  const [levelFilter, setLevelFilter] = useState<number | null>(null);
+  const [schoolFilter, setSchoolFilter] = useState('');
 
-  // Filter spells based on search query
-  const filteredSpells = spells.filter(spell => 
-    spell.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    spell.school.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  // Unique schools and levels for filter dropdowns
+  const schools = [...new Set(spells.map(s => s.school))].sort();
+  const levels = [...new Set(spells.map(s => s.level))].sort((a, b) => a - b);
 
-  // Get spells for current view
+  // Filter spells based on search query and filters
+  const filterSpells = (list: typeof spells) =>
+    list.filter(spell => {
+      const matchesSearch =
+        spell.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        spell.school.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        spell.sources.some(s => s.toLowerCase().includes(searchQuery.toLowerCase()));
+      const matchesLevel = levelFilter === null || spell.level === levelFilter;
+      const matchesSchool = !schoolFilter || spell.school === schoolFilter;
+      return matchesSearch && matchesLevel && matchesSchool;
+    });
+
   const deckSpells = spells.filter(s => deck.includes(s.id));
   const favoriteSpells = spells.filter(s => favorites.includes(s.id));
 
-  let displaySpells = filteredSpells;
-  if (activeTab === 'deck') {
-    displaySpells = deckSpells.filter(spell => spell.name.toLowerCase().includes(searchQuery.toLowerCase()));
-  } else if (activeTab === 'favorites') {
-    displaySpells = favoriteSpells.filter(spell => spell.name.toLowerCase().includes(searchQuery.toLowerCase()));
-  }
+  let displaySpells =
+    activeTab === 'deck'
+      ? filterSpells(deckSpells)
+      : activeTab === 'favorites'
+      ? filterSpells(favoriteSpells)
+      : filterSpells(spells);
 
   return (
     <div className="app-container">
       <header>
-        <h1>Myranor Spell Deck</h1>
-        <p className="subtitle">Manage your magical arsenal</p>
+        <h1>Myranor Zauber</h1>
+        <p className="subtitle">Verwalte dein magisches Arsenal</p>
       </header>
-      
+
       <main>
+        {/* Tab bar + filters */}
         <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
+          {/* Tabs */}
           <div className="glass-panel" style={{ display: 'flex', padding: '0.5rem', gap: '0.5rem', flexGrow: 1 }}>
-            <button 
+            <button
               className={`btn ${activeTab === 'catalog' ? 'btn-primary' : ''}`}
               onClick={() => setActiveTab('catalog')}
             >
-              All Spells
+              Alle Zauber ({spells.length})
             </button>
-            <button 
+            <button
               className={`btn ${activeTab === 'deck' ? 'btn-primary' : ''}`}
               onClick={() => setActiveTab('deck')}
             >
-              My Deck ({deck.length})
+              Mein Deck ({deck.length})
             </button>
-            <button 
+            <button
               className={`btn ${activeTab === 'favorites' ? 'btn-primary' : ''}`}
               onClick={() => setActiveTab('favorites')}
             >
-              Favorites ({favorites.length})
-            </button>
-            <button 
-              className={`btn ${activeTab === 'import' ? 'btn-primary' : ''}`}
-              onClick={() => setActiveTab('import')}
-              style={{ marginLeft: 'auto' }}
-            >
-              Import Spells
+              Favoriten ({favorites.length})
             </button>
           </div>
 
-          <div className="glass-panel" style={{ display: 'flex', padding: '0.5rem', minWidth: '250px' }}>
-            <input 
-              type="text" 
-              placeholder="Search spells..." 
+          {/* Search */}
+          <div className="glass-panel" style={{ display: 'flex', padding: '0.5rem', minWidth: '220px', flexGrow: 1 }}>
+            <input
+              type="text"
+              placeholder="Zauber suchen..."
               value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
+              onChange={e => setSearchQuery(e.target.value)}
               style={{
                 width: '100%',
                 background: 'transparent',
@@ -75,24 +81,73 @@ function App() {
                 color: 'var(--text-main)',
                 outline: 'none',
                 padding: '0.5rem',
-                fontFamily: 'inherit'
+                fontFamily: 'inherit',
               }}
             />
           </div>
+
+          {/* Level filter */}
+          <div className="glass-panel" style={{ display: 'flex', padding: '0.5rem' }}>
+            <select
+              value={levelFilter ?? ''}
+              onChange={e => setLevelFilter(e.target.value === '' ? null : Number(e.target.value))}
+              style={{
+                background: 'transparent',
+                border: 'none',
+                color: 'var(--text-main)',
+                outline: 'none',
+                padding: '0.5rem',
+                fontFamily: 'inherit',
+                cursor: 'pointer',
+              }}
+            >
+              <option value="">Alle Grade</option>
+              {levels.map(l => (
+                <option key={l} value={l}>
+                  {l === 0 ? 'Zaubertrick' : `Grad ${l}`}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {/* School filter */}
+          <div className="glass-panel" style={{ display: 'flex', padding: '0.5rem' }}>
+            <select
+              value={schoolFilter}
+              onChange={e => setSchoolFilter(e.target.value)}
+              style={{
+                background: 'transparent',
+                border: 'none',
+                color: 'var(--text-main)',
+                outline: 'none',
+                padding: '0.5rem',
+                fontFamily: 'inherit',
+                cursor: 'pointer',
+              }}
+            >
+              <option value="">Alle Schulen</option>
+              {schools.map(s => (
+                <option key={s} value={s}>{s}</option>
+              ))}
+            </select>
+          </div>
         </div>
 
-        {activeTab === 'import' ? (
-          <ImportView />
-        ) : (
-          <SpellList 
-            spells={displaySpells} 
-            emptyMessage={
-              activeTab === 'catalog' ? "No spells found matching your search." :
-              activeTab === 'deck' ? "Your deck is empty. Add some spells from the catalog!" :
-              "You haven't favorited any spells yet."
-            } 
-          />
-        )}
+        {/* Results count */}
+        <div style={{ marginBottom: '1rem', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
+          {displaySpells.length} Zauber gefunden
+        </div>
+
+        <SpellList
+          spells={displaySpells}
+          emptyMessage={
+            activeTab === 'catalog'
+              ? 'Keine Zauber gefunden.'
+              : activeTab === 'deck'
+              ? 'Dein Deck ist leer. Füge Zauber aus dem Katalog hinzu!'
+              : 'Du hast noch keine Lieblinge.'
+          }
+        />
       </main>
     </div>
   );
