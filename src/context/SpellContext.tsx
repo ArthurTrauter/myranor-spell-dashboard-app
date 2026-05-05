@@ -1,32 +1,13 @@
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import React, { createContext, useContext, useState, useEffect, useCallback, ReactNode } from 'react';
 import { Spell, SpellContextType } from '../types';
-import rawSpellsData from '../data/spells.json';
-
-// Generate a stable slug-based ID from a spell name
-function slugify(name: string): string {
-  return name
-    .toLowerCase()
-    .replace(/ä/g, 'ae')
-    .replace(/ö/g, 'oe')
-    .replace(/ü/g, 'ue')
-    .replace(/ß/g, 'ss')
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '');
-}
-
-// Attach generated IDs to the spell data
-const spellsData: Spell[] = (rawSpellsData as Omit<Spell, 'id'>[]).map(spell => ({
-  ...spell,
-  id: slugify(spell.name),
-}));
+import { supabase } from '../lib/supabase';
+import { useAuth } from './AuthContext';
 
 const SpellContext = createContext<SpellContextType | undefined>(undefined);
 
 export const useSpells = () => {
   const context = useContext(SpellContext);
-  if (!context) {
-    throw new Error('useSpells must be used within a SpellProvider');
-  }
+  if (!context) throw new Error('useSpells must be used within a SpellProvider');
   return context;
 };
 
@@ -35,44 +16,134 @@ interface SpellProviderProps {
 }
 
 export const SpellProvider: React.FC<SpellProviderProps> = ({ children }) => {
-  const [spells] = useState<Spell[]>(spellsData);
+  const { user } = useAuth();
+
+  const [spells, setSpells] = useState<Spell[]>([]);
   const [deck, setDeck] = useState<string[]>([]);
   const [favorites, setFavorites] = useState<string[]>([]);
+  const [loadingSpells, setLoadingSpells] = useState(true);
+  const [loadingUser, setLoadingUser] = useState(false);
 
-  // Load from local storage on mount
+  // ---------------------------------------------------------------
+  // Load all spells from Supabase (once on mount)
+  // ---------------------------------------------------------------
   useEffect(() => {
-    const savedDeck = localStorage.getItem('myranor_deck');
-    const savedFavs = localStorage.getItem('myranor_favorites');
+    const fetchSpells = async () => {
+      setLoadingSpells(true);
+      const { data, error } = await supabase
+        .from('spells')
+        .select('*')
+        .order('level', { ascending: true })
+        .order('name', { ascending: true });
 
-    if (savedDeck) setDeck(JSON.parse(savedDeck));
-    if (savedFavs) setFavorites(JSON.parse(savedFavs));
+      if (error) {
+        console.error('Error fetching spells:', error.message);
+      } else {
+        setSpells((data as Spell[]) ?? []);
+      }
+      setLoadingSpells(false);
+    };
+
+    fetchSpells();
   }, []);
 
-  // Persist deck to local storage on change
-  useEffect(() => {
-    localStorage.setItem('myranor_deck', JSON.stringify(deck));
-  }, [deck]);
+  // ---------------------------------------------------------------
+  // Load deck & favorites for the current user
+  // ---------------------------------------------------------------
+  const loadUserData = useCallback(async () => {
+    if (!user) {
+      setDeck([]);
+      setFavorites([]);
+      return;
+    }
 
-  // Persist favorites to local storage on change
-  useEffect(() => {
-    localStorage.setItem('myranor_favorites', JSON.stringify(favorites));
-  }, [favorites]);
+    setLoadingUser(true);
 
-  const addToDeck = (id: string) => {
-    if (!deck.includes(id)) {
-      setDeck([...deck, id]);
+    const [deckRes, favsRes] = await Promise.all([
+      supabase
+        .from('user_decks')
+        .select('spell_id')
+        .eq('user_id', user.id),
+      supabase
+        .from('user_favorites')
+        .select('spell_id')
+        .eq('user_id', user.id),
+    ]);
+
+    if (deckRes.error) console.error('Error fetching deck:', deckRes.error.message);
+    else setDeck((deckRes.data ?? []).map(r => r.spell_id));
+
+    if (favsRes.error) console.error('Error fetching favorites:', favsRes.error.message);
+    else setFavorites((favsRes.data ?? []).map(r => r.spell_id));
+
+    setLoadingUser(false);
+  }, [user]);
+
+  useEffect(() => {
+    loadUserData();
+  }, [loadUserData]);
+
+  // ---------------------------------------------------------------
+  // Deck mutations
+  // ---------------------------------------------------------------
+  const addToDeck = async (spellId: string) => {
+    if (!user || deck.includes(spellId)) return;
+    setDeck(prev => [...prev, spellId]); // optimistic update
+
+    const { error } = await supabase
+      .from('user_decks')
+      .insert({ user_id: user.id, spell_id: spellId });
+
+    if (error) {
+      console.error('Error adding to deck:', error.message);
+      setDeck(prev => prev.filter(id => id !== spellId)); // rollback
     }
   };
 
-  const removeFromDeck = (id: string) => {
-    setDeck(deck.filter(spellId => spellId !== id));
+  const removeFromDeck = async (spellId: string) => {
+    if (!user) return;
+    setDeck(prev => prev.filter(id => id !== spellId)); // optimistic update
+
+    const { error } = await supabase
+      .from('user_decks')
+      .delete()
+      .eq('user_id', user.id)
+      .eq('spell_id', spellId);
+
+    if (error) {
+      console.error('Error removing from deck:', error.message);
+      setDeck(prev => [...prev, spellId]); // rollback
+    }
   };
 
-  const toggleFavorite = (id: string) => {
-    if (favorites.includes(id)) {
-      setFavorites(favorites.filter(spellId => spellId !== id));
+  // ---------------------------------------------------------------
+  // Favorites mutations
+  // ---------------------------------------------------------------
+  const toggleFavorite = async (spellId: string) => {
+    if (!user) return;
+
+    if (favorites.includes(spellId)) {
+      setFavorites(prev => prev.filter(id => id !== spellId)); // optimistic
+      const { error } = await supabase
+        .from('user_favorites')
+        .delete()
+        .eq('user_id', user.id)
+        .eq('spell_id', spellId);
+
+      if (error) {
+        console.error('Error removing favorite:', error.message);
+        setFavorites(prev => [...prev, spellId]); // rollback
+      }
     } else {
-      setFavorites([...favorites, id]);
+      setFavorites(prev => [...prev, spellId]); // optimistic
+      const { error } = await supabase
+        .from('user_favorites')
+        .insert({ user_id: user.id, spell_id: spellId });
+
+      if (error) {
+        console.error('Error adding favorite:', error.message);
+        setFavorites(prev => prev.filter(id => id !== spellId)); // rollback
+      }
     }
   };
 
@@ -80,6 +151,8 @@ export const SpellProvider: React.FC<SpellProviderProps> = ({ children }) => {
     spells,
     deck,
     favorites,
+    loadingSpells,
+    loadingUser,
     addToDeck,
     removeFromDeck,
     toggleFavorite,

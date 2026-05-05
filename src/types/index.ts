@@ -1,4 +1,4 @@
-// Spell data structure matching the template in spellTemplate.json
+// Spell data structure matching spellTemplate.json
 
 export interface CastingTime {
   base_time: string;
@@ -26,7 +26,7 @@ export interface Duration {
 }
 
 export interface Spell {
-  // Generated client-side ID based on spell name (slug)
+  /** Slug-based ID, e.g. "ablenkender-schmerz" */
   id: string;
   name: string;
   level: number;
@@ -47,7 +47,11 @@ export interface SpellContextType {
   spells: Spell[];
   deck: string[];
   favorites: string[];
-  addToDeck: (id: string) => void;
-  removeFromDeck: (id: string) => void;
-  toggleFavorite: (id: string) => void;
+  /** True while the initial spells list is being fetched from Supabase */
+  loadingSpells: boolean;
+  /** True while per-user deck/favorites data is being fetched */
+  loadingUser: boolean;
+  addToDeck: (id: string) => Promise<void>;
+  removeFromDeck: (id: string) => Promise<void>;
+  toggleFavorite: (id: string) => Promise<void>;
 }

@@ -110,7 +110,12 @@ h1 {
 
 .btn-icon {
   background: transparent;
-  padding: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   color: var(--text-muted);
 }
@@ -126,4 +131,15 @@ h1 {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
+}
+
+/* Loading Spinner */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Select option dark mode fix */
+option {
+  background: var(--bg-surface);
+  color: var(--text-main);
 }

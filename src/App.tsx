@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import { useSpells } from './context/SpellContext';
+import { useAuth } from './context/AuthContext';
 import { SpellList } from './components/SpellList';
 
 function App() {
-  const { spells, deck, favorites } = useSpells();
+  const { spells, deck, favorites, loadingSpells, loadingUser } = useSpells();
+  const { user, signOut } = useAuth();
+
   const [activeTab, setActiveTab] = useState<'catalog' | 'deck' | 'favorites'>('catalog');
   const [searchQuery, setSearchQuery] = useState('');
   const [levelFilter, setLevelFilter] = useState<number | null>(null);
@@ -13,7 +16,6 @@ function App() {
   const schools = [...new Set(spells.map(s => s.school))].sort();
   const levels = [...new Set(spells.map(s => s.level))].sort((a, b) => a - b);
 
-  // Filter spells based on search query and filters
   const filterSpells = (list: typeof spells) =>
     list.filter(spell => {
       const matchesSearch =
@@ -28,23 +30,42 @@ function App() {
   const deckSpells = spells.filter(s => deck.includes(s.id));
   const favoriteSpells = spells.filter(s => favorites.includes(s.id));
 
-  let displaySpells =
+  const displaySpells =
     activeTab === 'deck'
       ? filterSpells(deckSpells)
       : activeTab === 'favorites'
       ? filterSpells(favoriteSpells)
       : filterSpells(spells);
 
+  const isLoading = loadingSpells || loadingUser;
+
   return (
     <div className="app-container">
       <header>
-        <h1>Myranor Zauber</h1>
-        <p className="subtitle">Verwalte dein magisches Arsenal</p>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1rem' }}>
+          <div>
+            <h1>Myranor Zauber</h1>
+            <p className="subtitle">Verwalte dein magisches Arsenal</p>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexShrink: 0 }}>
+            <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+              {user?.email}
+            </span>
+            <button
+              className="btn"
+              onClick={signOut}
+              style={{ fontSize: '0.85rem', padding: '0.4rem 0.9rem' }}
+            >
+              Abmelden
+            </button>
+          </div>
+        </div>
       </header>
 
       <main>
         {/* Tab bar + filters */}
         <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
+
           {/* Tabs */}
           <div className="glass-panel" style={{ display: 'flex', padding: '0.5rem', gap: '0.5rem', flexGrow: 1 }}>
             <button
@@ -71,7 +92,7 @@ function App() {
           <div className="glass-panel" style={{ display: 'flex', padding: '0.5rem', minWidth: '220px', flexGrow: 1 }}>
             <input
               type="text"
-              placeholder="Zauber suchen..."
+              placeholder="Zauber suchen…"
               value={searchQuery}
               onChange={e => setSearchQuery(e.target.value)}
               style={{
@@ -87,7 +108,7 @@ function App() {
           </div>
 
           {/* Level filter */}
-          <div className="glass-panel" style={{ display: 'flex', padding: '0.5rem' }}>
+          <div className="glass-panel" style={{ padding: '0.5rem' }}>
             <select
               value={levelFilter ?? ''}
               onChange={e => setLevelFilter(e.target.value === '' ? null : Number(e.target.value))}
@@ -111,7 +132,7 @@ function App() {
           </div>
 
           {/* School filter */}
-          <div className="glass-panel" style={{ display: 'flex', padding: '0.5rem' }}>
+          <div className="glass-panel" style={{ padding: '0.5rem' }}>
             <select
               value={schoolFilter}
               onChange={e => setSchoolFilter(e.target.value)}
@@ -133,21 +154,37 @@ function App() {
           </div>
         </div>
 
-        {/* Results count */}
-        <div style={{ marginBottom: '1rem', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
-          {displaySpells.length} Zauber gefunden
-        </div>
-
-        <SpellList
-          spells={displaySpells}
-          emptyMessage={
-            activeTab === 'catalog'
-              ? 'Keine Zauber gefunden.'
-              : activeTab === 'deck'
-              ? 'Dein Deck ist leer. Füge Zauber aus dem Katalog hinzu!'
-              : 'Du hast noch keine Lieblinge.'
-          }
-        />
+        {/* Loading state */}
+        {isLoading ? (
+          <div style={{ textAlign: 'center', padding: '4rem', color: 'var(--text-muted)' }}>
+            <div style={{
+              width: '40px',
+              height: '40px',
+              border: '3px solid var(--border-color)',
+              borderTopColor: 'var(--primary)',
+              borderRadius: '50%',
+              animation: 'spin 0.8s linear infinite',
+              margin: '0 auto 1rem',
+            }} />
+            Zauber werden geladen…
+          </div>
+        ) : (
+          <>
+            <div style={{ marginBottom: '1rem', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
+              {displaySpells.length} Zauber gefunden
+            </div>
+            <SpellList
+              spells={displaySpells}
+              emptyMessage={
+                activeTab === 'catalog'
+                  ? 'Keine Zauber gefunden.'
+                  : activeTab === 'deck'
+                  ? 'Dein Deck ist leer. Füge Zauber aus dem Katalog hinzu!'
+                  : 'Du hast noch keine Favoriten.'
+              }
+            />
+          </>
+        )}
       </main>
     </div>
   );
