@@ -11,10 +11,12 @@ function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [levelFilter, setLevelFilter] = useState<number | null>(null);
   const [schoolFilter, setSchoolFilter] = useState('');
+  const [sourceFilter, setSourceFilter] = useState('');
 
-  // Unique schools and levels for filter dropdowns
+  // Unique schools, levels, and sources for filter dropdowns
   const schools = [...new Set(spells.map(s => s.school))].sort();
   const levels = [...new Set(spells.map(s => s.level))].sort((a, b) => a - b);
+  const sources = [...new Set(spells.flatMap(s => s.sources))].sort();
 
   const filterSpells = (list: typeof spells) =>
     list.filter(spell => {
@@ -24,7 +26,8 @@ function App() {
         spell.sources.some(s => s.toLowerCase().includes(searchQuery.toLowerCase()));
       const matchesLevel = levelFilter === null || spell.level === levelFilter;
       const matchesSchool = !schoolFilter || spell.school === schoolFilter;
-      return matchesSearch && matchesLevel && matchesSchool;
+      const matchesSource = !sourceFilter || spell.sources.includes(sourceFilter);
+      return matchesSearch && matchesLevel && matchesSchool && matchesSource;
     });
 
   const deckSpells = spells.filter(s => deck.includes(s.id));
@@ -148,6 +151,28 @@ function App() {
             >
               <option value="">Alle Schulen</option>
               {schools.map(s => (
+                <option key={s} value={s}>{s}</option>
+              ))}
+            </select>
+          </div>
+
+          {/* Source filter */}
+          <div className="glass-panel" style={{ padding: '0.5rem' }}>
+            <select
+              value={sourceFilter}
+              onChange={e => setSourceFilter(e.target.value)}
+              style={{
+                background: 'transparent',
+                border: 'none',
+                color: 'var(--text-main)',
+                outline: 'none',
+                padding: '0.5rem',
+                fontFamily: 'inherit',
+                cursor: 'pointer',
+              }}
+            >
+              <option value="">Alle Quellen</option>
+              {sources.map(s => (
                 <option key={s} value={s}>{s}</option>
               ))}
             </select>

@@ -76,7 +76,11 @@ export const SpellCard: FC<SpellCardProps> = ({ spell }) => {
         <div><strong>Komp.:</strong> {formatComponents(spell)}</div>
       </div>
 
-      {spell.sources.length > 0 && (
+      {spell.sources_display ? (
+        <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
+          <strong>Quellen:</strong> {spell.sources_display}
+        </div>
+      ) : spell.sources.length > 0 && (
         <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
           <strong>Quellen:</strong> {spell.sources.join(', ')}
         </div>

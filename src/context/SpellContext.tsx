@@ -32,14 +32,26 @@ export const SpellProvider: React.FC<SpellProviderProps> = ({ children }) => {
       setLoadingSpells(true);
       const { data, error } = await supabase
         .from('spells')
-        .select('*')
+        .select(`
+          *,
+          spell_sources (
+            sources (
+              name
+            )
+          )
+        `)
         .order('level', { ascending: true })
         .order('name', { ascending: true });
 
       if (error) {
         console.error('Error fetching spells:', error.message);
       } else {
-        setSpells((data as Spell[]) ?? []);
+        // Map nested relational data back to a flat sources array
+        const mappedSpells = (data ?? []).map((spell: any) => ({
+          ...spell,
+          sources: spell.spell_sources?.map((ss: any) => ss.sources?.name).filter(Boolean) ?? []
+        }));
+        setSpells(mappedSpells as Spell[]);
       }
       setLoadingSpells(false);
     };

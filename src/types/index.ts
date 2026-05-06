@@ -25,6 +25,18 @@ export interface Duration {
   concentration: boolean;
 }
 
+export interface Sphere {
+  id: string;
+  name: string;
+}
+
+export interface Source {
+  id: string;
+  name: string;
+  sphere_id: string;
+}
+
+
 export interface Spell {
   /** Slug-based ID, e.g. "ablenkender-schmerz" */
   id: string;
@@ -33,6 +45,7 @@ export interface Spell {
   school: string;
   is_ritual: boolean;
   sources: string[];
+  sources_display?: string;
   casting_time: CastingTime;
   range: SpellRange;
   components: Components;

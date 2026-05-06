@@ -5,7 +5,42 @@
     "school": "Verzauberung",
     "is_ritual": false,
     "sources": [
-      "Alle"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -39,10 +74,10 @@
     "school": "Illusion",
     "is_ritual": false,
     "sources": [
+      "Iryabaar",
       "Kraft",
       "Kreativität",
       "Wahnsinn",
-      "Iryabaar",
       "Zeit"
     ],
     "casting_time": {
@@ -77,8 +112,41 @@
     "school": "Beschwörung",
     "is_ritual": true,
     "sources": [
-      "Alle außer Wahnsinn",
-      "Aggression und Zeit"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "1 Minute",
@@ -146,19 +214,28 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Eis",
-      "Feuer",
-      "Kraft",
-      "alle stellaren",
-      "Totenwesen",
+      "Aggression",
       "Avastada",
+      "Begierde",
       "Carafai",
       "Darcalya",
       "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Feuer",
+      "Freiheit",
+      "Harmonie",
       "Iryabaar",
+      "Kraft",
+      "Kreativität",
       "Mishkarya",
+      "Totenwesen",
       "Tyakaar",
+      "Wahnsinn",
       "Xolovar",
+      "Zauberei",
       "Zeit"
     ],
     "casting_time": {
@@ -229,12 +306,12 @@
     "is_ritual": false,
     "sources": [
       "Begierde",
+      "Darcalya",
       "Erfolg",
       "Freiheit",
       "Harmonie",
-      "Wahnsinn",
-      "Darcalya",
       "Iryabaar",
+      "Wahnsinn",
       "Xolovar"
     ],
     "casting_time": {
@@ -269,8 +346,8 @@
     "school": "Erkenntnis",
     "is_ritual": true,
     "sources": [
-      "Zauberei",
-      "Iryabaar"
+      "Iryabaar",
+      "Zauberei"
     ],
     "casting_time": {
       "base_time": "1 Minute",
@@ -341,11 +418,35 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Alle elementaren außer Humus",
-      "alle stellaren außer Erkenntnis und Kreativität",
-      "Totenwesen",
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Harmonie",
+      "Iryabaar",
+      "Kraft",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
       "Tiergeister",
-      "alle dämonischen außer Khalyanar"
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Xolovar",
+      "Zauberei"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -379,11 +480,11 @@
     "school": "Illusion",
     "is_ritual": false,
     "sources": [
-      "Luft",
+      "Iryabaar",
       "Kraft",
       "Kreativität",
-      "Wahnsinn",
-      "Iryabaar"
+      "Luft",
+      "Wahnsinn"
     ],
     "casting_time": {
       "base_time": "10 Minuten",
@@ -417,9 +518,9 @@
     "school": "Bannzauber",
     "is_ritual": false,
     "sources": [
+      "Aggari",
       "Erz",
-      "Kraft",
-      "Aggari"
+      "Kraft"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -453,7 +554,42 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Quellenunabhängig"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -556,8 +692,8 @@
     "school": "Verwandlung",
     "is_ritual": true,
     "sources": [
-      "Wasser",
-      "Galkuzul"
+      "Galkuzul",
+      "Wasser"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -591,14 +727,14 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
+      "Aggari",
       "Eis",
       "Erz",
-      "Humus",
-      "Wasser",
-      "Aggari",
       "Galkuzul",
+      "Humus",
       "Khalyanar",
-      "Naggarach"
+      "Naggarach",
+      "Wasser"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -632,8 +768,8 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Erz",
       "Aggari",
+      "Erz",
       "Zeit"
     ],
     "casting_time": {
@@ -668,9 +804,9 @@
     "school": "Illusion",
     "is_ritual": false,
     "sources": [
-      "Luft",
-      "Kreativität",
       "Iryabaar",
+      "Kreativität",
+      "Luft",
       "Thesephai"
     ],
     "casting_time": {
@@ -707,9 +843,9 @@
     "sources": [
       "Erkenntnis",
       "Harmonie",
-      "Totenwesen",
-      "Tiergeister",
       "Iryabaar",
+      "Tiergeister",
+      "Totenwesen",
       "Tyakaar",
       "Xolovar"
     ],
@@ -747,11 +883,11 @@
     "sources": [
       "Aggression",
       "Begierde",
+      "Darcalya",
       "Erfolg",
       "Harmonie",
-      "Wahnsinn",
-      "Darcalya",
-      "Tyakaar"
+      "Tyakaar",
+      "Wahnsinn"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -820,19 +956,19 @@
     "school": "Bannzauber",
     "is_ritual": false,
     "sources": [
-      "Humus",
       "Aggression",
+      "Avastada",
+      "Carafai",
       "Endgültigkeit",
       "Erfolg",
       "Freiheit",
-      "Harmonie",
-      "Wahnsinn",
-      "Tiergeister",
-      "Avastada",
-      "Carafai",
       "Ghorgumor",
+      "Harmonie",
+      "Humus",
       "Iryabaar",
-      "Khalyanar"
+      "Khalyanar",
+      "Tiergeister",
+      "Wahnsinn"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -866,10 +1002,10 @@
     "school": "Bannzauber",
     "is_ritual": false,
     "sources": [
-      "Wasser",
       "Freiheit",
       "Galkuzul",
-      "Thesephai"
+      "Thesephai",
+      "Wasser"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -938,9 +1074,9 @@
     "school": "Erkenntnis",
     "is_ritual": false,
     "sources": [
-      "Erz",
+      "Aggari",
       "Erkenntnis",
-      "Aggari"
+      "Erz"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -1010,8 +1146,8 @@
     "is_ritual": false,
     "sources": [
       "Humus",
-      "Luft",
       "Khalyanar",
+      "Luft",
       "Mishkarya",
       "Thesephai"
     ],
@@ -1082,7 +1218,42 @@
     "school": "Nekromantie",
     "is_ritual": false,
     "sources": [
-      "Quellenunabhängig"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -1116,9 +1287,9 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Luft",
       "Endgültigkeit",
       "Harmonie",
+      "Luft",
       "Thesephai"
     ],
     "casting_time": {
@@ -1188,9 +1359,9 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
+      "Aggari",
       "Erz",
       "Luft",
-      "Aggari",
       "Thesephai"
     ],
     "casting_time": {
@@ -1294,10 +1465,10 @@
     "school": "Beschwörung",
     "is_ritual": false,
     "sources": [
+      "Aggari",
       "Eis",
       "Erz",
       "Humus",
-      "Aggari",
       "Khalyanar",
       "Naggarach"
     ],
@@ -1333,13 +1504,13 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Eis",
-      "Endgültigkeit",
-      "Totenwesen",
       "Avastada",
       "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
       "Galkuzul",
       "Naggarach",
+      "Totenwesen",
       "Tyakaar"
     ],
     "casting_time": {
@@ -1375,9 +1546,9 @@
     "is_ritual": false,
     "sources": [
       "Erkenntnis",
-      "Tiergeister",
       "Ghorgumor",
       "Naggarach",
+      "Tiergeister",
       "Tyakaar"
     ],
     "casting_time": {
@@ -1412,17 +1583,17 @@
     "school": "Nekromantie",
     "is_ritual": false,
     "sources": [
+      "Dhya’Khol",
       "Eis",
       "Feuer",
+      "Galkuzul",
       "Humus",
-      "Wasser",
-      "Totenwesen",
-      "Dhya’Khol",
-      "Gakluzul",
       "Khalyanar",
       "Mishkarya",
       "Naggarach",
+      "Totenwesen",
       "Tyakaar",
+      "Wasser",
       "Zeit"
     ],
     "casting_time": {
@@ -1457,14 +1628,22 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Luft",
-      "alle stellaren außer Zauberei",
-      "Totenwesen",
+      "Aggression",
       "Avastada",
+      "Begierde",
       "Darcalya",
       "Dhya’Khol",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Freiheit",
+      "Harmonie",
       "Iryabaar",
+      "Kreativität",
+      "Luft",
       "Thesephai",
+      "Totenwesen",
+      "Wahnsinn",
       "Xolovar"
     ],
     "casting_time": {
@@ -1501,15 +1680,15 @@
     "sources": [
       "Aggression",
       "Begierde",
-      "Erfolg",
-      "Harmonie",
-      "Kreativität",
-      "Wahnsinn",
       "Carafai",
       "Darcalya",
+      "Erfolg",
       "Ghorgumor",
+      "Harmonie",
       "Iryabaar",
-      "Tyakaar"
+      "Kreativität",
+      "Tyakaar",
+      "Wahnsinn"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -1543,10 +1722,10 @@
     "school": "Verwandlung",
     "is_ritual": true,
     "sources": [
+      "Aggari",
       "Eis",
       "Erz",
       "Humus",
-      "Aggari",
       "Khalyanar",
       "Naggarach"
     ],
@@ -1583,16 +1762,16 @@
     "is_ritual": false,
     "sources": [
       "Aggression",
-      "Endgültigkeit",
-      "Harmonie",
-      "Wahnsinn",
-      "Totenwesen",
-      "Tiergeister",
       "Avastada",
       "Carafai",
       "Dhya’Khol",
+      "Endgültigkeit",
       "Ghorgumor",
-      "Tyakaar"
+      "Harmonie",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -1696,11 +1875,19 @@
     "school": "Verzauberung",
     "is_ritual": false,
     "sources": [
-      "Alle stellaren außer Zauberei",
+      "Aggression",
       "Avastada",
+      "Begierde",
       "Carafai",
       "Darcalya",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Freiheit",
+      "Harmonie",
       "Iryabaar",
+      "Kreativität",
+      "Wahnsinn",
       "Xolovar"
     ],
     "casting_time": {
@@ -1804,15 +1991,36 @@
     "school": "Beschwörung",
     "is_ritual": false,
     "sources": [
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
       "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
       "Feuer",
+      "Freiheit",
+      "Ghorgumor",
+      "Harmonie",
       "Humus",
-      "Luft",
+      "Iryabaar",
+      "Khalyanar",
       "Kraft",
-      "alle stellaren",
-      "Totenwesen",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
       "Tiergeister",
-      "alle dämonischen außer Galkuzul",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Xolovar",
+      "Zauberei",
       "Zeit"
     ],
     "casting_time": {
@@ -1847,8 +2055,8 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Erz",
-      "Aggari"
+      "Aggari",
+      "Erz"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -1882,8 +2090,16 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Alle stellaren außer Zauberei",
-      "Tiergeister"
+      "Aggression",
+      "Begierde",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Freiheit",
+      "Harmonie",
+      "Kreativität",
+      "Tiergeister",
+      "Wahnsinn"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -1917,9 +2133,9 @@
     "school": "Verzauberung",
     "is_ritual": false,
     "sources": [
+      "Iryabaar",
       "Kreativität",
-      "Wahnsinn",
-      "Iryabaar"
+      "Wahnsinn"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -1987,12 +2203,12 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Erz",
-      "Wasser",
-      "Aggression",
       "Aggari",
+      "Aggression",
       "Carafai",
-      "Galkuzul"
+      "Erz",
+      "Galkuzul",
+      "Wasser"
     ],
     "casting_time": {
       "base_time": "1 Bonusaktion, die du sofort ausführst, wenn du ein Ziel mit einer Nahkampfwaffe oder einem waffenlosen Angriff getroffen hast",
@@ -2026,7 +2242,40 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Alle außer Humus und Khalyanar"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Iryabaar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -2061,8 +2310,8 @@
     "is_ritual": false,
     "sources": [
       "Erkenntnis",
-      "Kreativität",
-      "Khalyanar"
+      "Khalyanar",
+      "Kreativität"
     ],
     "casting_time": {
       "base_time": "8 Stunden",
@@ -2096,7 +2345,42 @@
     "school": "Bannzauber",
     "is_ritual": false,
     "sources": [
-      "Quellenunabhängig"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -2130,7 +2414,40 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Alle außer Humus und Khalyanar"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Iryabaar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -2199,9 +2516,9 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Luft",
       "Kraft",
-      "Tesephai"
+      "Luft",
+      "Thesephai"
     ],
     "casting_time": {
       "base_time": "1 Reaktion",
@@ -2236,15 +2553,15 @@
     "is_ritual": false,
     "sources": [
       "Aggression",
+      "Avastada",
       "Begierde",
+      "Carafai",
+      "Darcalya",
       "Endgültigkeit",
       "Erfolg",
       "Erkenntnis",
       "Freiheit",
       "Harmonie",
-      "Avastada",
-      "Carafai",
-      "Darcalya",
       "Xolovar"
     ],
     "casting_time": {
@@ -2279,14 +2596,14 @@
     "school": "Beschwörung",
     "is_ritual": false,
     "sources": [
+      "Aggari",
       "Eis",
       "Erz",
-      "Humus",
-      "Wasser",
-      "Aggari",
       "Galkuzul",
+      "Humus",
       "Khalyanar",
-      "Naggarach"
+      "Naggarach",
+      "Wasser"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -2320,9 +2637,9 @@
     "school": "Nekromantie",
     "is_ritual": false,
     "sources": [
-      "Totenwesen",
       "Dhya’Khol",
-      "Mishkarya"
+      "Mishkarya",
+      "Totenwesen"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -2461,9 +2778,9 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Erz",
-      "Eis",
       "Aggari",
+      "Eis",
+      "Erz",
       "Naggarach"
     ],
     "casting_time": {
@@ -2499,8 +2816,8 @@
     "is_ritual": false,
     "sources": [
       "Luft",
-      "Tiergeister",
-      "Thesephai"
+      "Thesephai",
+      "Tiergeister"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -2534,16 +2851,29 @@
     "school": "Nekromantie",
     "is_ritual": false,
     "sources": [
-      "Kraft",
+      "Aggari",
       "Aggression",
+      "Avastada",
       "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
       "Endgültigkeit",
       "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
       "Kreativität",
-      "Wahnsinn",
-      "Totenwesen",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
       "Tiergeister",
-      "alle dämonischen"
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Xolovar"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -2577,7 +2907,42 @@
     "school": "Bannzauber",
     "is_ritual": false,
     "sources": [
-      "Quellenunabhängig"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -2611,8 +2976,8 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Wasser",
-      "Galkuzul"
+      "Galkuzul",
+      "Wasser"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -2753,20 +3118,20 @@
     "is_ritual": false,
     "sources": [
       "Aggression",
-      "Begierde",
-      "Endgültigkeit",
-      "Erfolg",
-      "Harmonie",
-      "Wahnsinn",
-      "Totenwesen",
-      "Tiergeister",
       "Avastada",
+      "Begierde",
       "Carafai",
       "Darcalya",
       "Dhya’Khol",
+      "Endgültigkeit",
+      "Erfolg",
       "Ghorgumor",
+      "Harmonie",
       "Iryabaar",
-      "Tyakaar"
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -2800,9 +3165,9 @@
     "school": "Verzauberung",
     "is_ritual": false,
     "sources": [
-      "Endgültigkeit",
       "Avastada",
       "Darcalya",
+      "Endgültigkeit",
       "Tyakaar",
       "Xolovar"
     ],
@@ -2838,18 +3203,18 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Humus",
       "Aggression",
       "Begierde",
+      "Carafai",
+      "Darcalya",
       "Endgültigkeit",
       "Erfolg",
       "Freiheit",
       "Harmonie",
+      "Humus",
+      "Khalyanar",
       "Kreativität",
-      "Wahnsinn",
-      "Carafai",
-      "Darcalya",
-      "Khalyanar"
+      "Wahnsinn"
     ],
     "casting_time": {
       "base_time": "10 Minuten",
@@ -2918,12 +3283,12 @@
     "school": "Bannzauber",
     "is_ritual": false,
     "sources": [
+      "Avastada",
       "Endgültigkeit",
       "Freiheit",
+      "Iryabaar",
       "Wahnsinn",
-      "Zauberei",
-      "Avastada",
-      "Iryabaar"
+      "Zauberei"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -2994,12 +3359,12 @@
     "is_ritual": false,
     "sources": [
       "Aggression",
-      "Begierde",
-      "Endgültigkeit",
-      "Harmonie",
       "Avastada",
+      "Begierde",
       "Carafai",
       "Darcalya",
+      "Endgültigkeit",
+      "Harmonie",
       "Xolovar"
     ],
     "casting_time": {
@@ -3069,9 +3434,9 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
+      "Aggari",
       "Erz",
-      "Kraft",
-      "Aggari"
+      "Kraft"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -3105,7 +3470,42 @@
     "school": "Bannzauber",
     "is_ritual": false,
     "sources": [
-      "Quellenunabhängig"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "1 Reaktion",
@@ -3139,7 +3539,42 @@
     "school": "Beschwörung",
     "is_ritual": false,
     "sources": [
-      "Quellenunabhängig"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "1 Minute",
@@ -3173,12 +3608,12 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
+      "Dhya’Khol",
       "Feuer",
       "Kraft",
-      "Zauberei",
       "Totenwesen",
-      "Dhya’Khol",
-      "Tyakaar"
+      "Tyakaar",
+      "Zauberei"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -3212,10 +3647,26 @@
     "school": "Illusion",
     "is_ritual": true,
     "sources": [
-      "Alle elementaren außer Kraft",
-      "Totenwesen",
+      "Aggari",
+      "Avastada",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Erz",
+      "Feuer",
+      "Galkuzul",
+      "Ghorgumor",
+      "Humus",
+      "Khalyanar",
+      "Luft",
+      "Naggarach",
+      "Thesephai",
       "Tiergeister",
-      "alle dämonischen außer Iryabaar und Mishkarya"
+      "Totenwesen",
+      "Tyakaar",
+      "Wasser",
+      "Xolovar"
     ],
     "casting_time": {
       "base_time": "1 Minute",
@@ -3249,7 +3700,42 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Alle"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "1 Bonusaktion",
@@ -3283,7 +3769,42 @@
     "school": "Erkenntnis",
     "is_ritual": false,
     "sources": [
-      "Quellenunabhängig"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -3317,7 +3838,42 @@
     "school": "Beschwörung",
     "is_ritual": false,
     "sources": [
-      "Quellenunabhängig"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "10 Minuten",
@@ -3351,13 +3907,13 @@
     "school": "Illusion",
     "is_ritual": false,
     "sources": [
-      "Luft",
-      "Kreativität",
-      "Wahnsinn",
-      "Totenwesen",
       "Dhya’Khol",
       "Iryabaar",
-      "Tesephai"
+      "Kreativität",
+      "Luft",
+      "Thesephai",
+      "Totenwesen",
+      "Wahnsinn"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -3391,7 +3947,42 @@
     "school": "Beschwörung",
     "is_ritual": false,
     "sources": [
-      "Alle"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -3425,7 +4016,42 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Alle"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -3459,8 +4085,8 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Luft",
       "Kraft",
+      "Luft",
       "Thesephai"
     ],
     "casting_time": {
@@ -3495,13 +4121,19 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Alle elementaren",
       "Aggari",
+      "Eis",
+      "Erz",
+      "Feuer",
       "Galkuzul",
+      "Humus",
       "Khalyanar",
+      "Kraft",
+      "Luft",
       "Naggarach",
       "Thesephai",
-      "Tyakaar"
+      "Tyakaar",
+      "Wasser"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -3535,9 +4167,9 @@
     "school": "Erkenntnis",
     "is_ritual": false,
     "sources": [
+      "Avastada",
       "Endgültigkeit",
-      "Erkenntnis",
-      "Avastada"
+      "Erkenntnis"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -3572,8 +4204,8 @@
     "is_ritual": false,
     "sources": [
       "Humus",
-      "Tiergeister",
-      "Khalyanar"
+      "Khalyanar",
+      "Tiergeister"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -3715,7 +4347,42 @@
     "school": "Bannzauber",
     "is_ritual": false,
     "sources": [
-      "Quellenunabhängig"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "1 Stunde",
@@ -3783,8 +4450,8 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Wasser",
-      "Galkuzul"
+      "Galkuzul",
+      "Wasser"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -3852,10 +4519,10 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Luft",
-      "Wasser",
       "Galkuzul",
-      "Thesephai"
+      "Luft",
+      "Thesephai",
+      "Wasser"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -3889,10 +4556,10 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
+      "Aggari",
       "Eis",
       "Erz",
       "Feuer",
-      "Aggari",
       "Naggarach",
       "Tyakaar"
     ],
@@ -3928,9 +4595,9 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
+      "Aggari",
       "Eis",
-      "Erz",
-      "Aggari"
+      "Erz"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -3964,12 +4631,12 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Luft",
       "Erfolg",
       "Freiheit",
-      "Tiergeister",
       "Ghorgumor",
+      "Luft",
       "Thesephai",
+      "Tiergeister",
       "Zeit"
     ],
     "casting_time": {
@@ -4004,18 +4671,18 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Humus",
       "Aggression",
       "Begierde",
+      "Carafai",
+      "Darcalya",
       "Endgültigkeit",
       "Erfolg",
       "Freiheit",
       "Harmonie",
+      "Humus",
+      "Khalyanar",
       "Kreativität",
       "Wahnsinn",
-      "Carafai",
-      "Darcalya",
-      "Khalyanar",
       "Xolovar",
       "Zeit"
     ],
@@ -4051,7 +4718,7 @@
     "school": "Bannzauber",
     "is_ritual": false,
     "sources": [
-      "Nur Weihe"
+      "Weihe"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -4085,7 +4752,7 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Nur Weihe"
+      "Weihe"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -4119,7 +4786,7 @@
     "school": "Erkenntnis",
     "is_ritual": true,
     "sources": [
-      "Nur Weihe"
+      "Weihe"
     ],
     "casting_time": {
       "base_time": "1 Minute",
@@ -4225,7 +4892,7 @@
     "school": "Beschwörung",
     "is_ritual": false,
     "sources": [
-      "Nur Weihe"
+      "Weihe"
     ],
     "casting_time": {
       "base_time": "10 Minuten",
@@ -4260,12 +4927,12 @@
     "is_ritual": false,
     "sources": [
       "Aggression",
+      "Avastada",
+      "Carafai",
       "Endgültigkeit",
       "Erfolg",
       "Freiheit",
-      "Harmonie",
-      "Avastada",
-      "Carafai"
+      "Harmonie"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -4370,15 +5037,35 @@
     "school": "Beschwörung",
     "is_ritual": false,
     "sources": [
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
       "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
       "Erz",
       "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Harmonie",
+      "Iryabaar",
+      "Kreativität",
       "Luft",
-      "Wasser",
-      "alle stellaren",
-      "Totenwesen",
+      "Mishkarya",
+      "Naggarach",
       "Tiergeister",
-      "alle dämonischen außer Khalyanar und Thesephai"
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Xolovar",
+      "Zauberei"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -4413,17 +5100,17 @@
     "is_ritual": false,
     "sources": [
       "Aggression",
+      "Avastada",
       "Begierde",
+      "Carafai",
+      "Darcalya",
       "Endgültigkeit",
       "Erfolg",
       "Freiheit",
       "Harmonie",
+      "Iryabaar",
       "Kreativität",
       "Wahnsinn",
-      "Avastada",
-      "Carafai",
-      "Darcalya",
-      "Iryabaar",
       "Xolovar"
     ],
     "casting_time": {
@@ -4492,11 +5179,11 @@
     "school": "Illusion",
     "is_ritual": false,
     "sources": [
-      "Kreativität",
-      "Wahnsinn",
-      "Tiergeister",
       "Ghorgumor",
-      "Iryabaar"
+      "Iryabaar",
+      "Kreativität",
+      "Tiergeister",
+      "Wahnsinn"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -4530,9 +5217,9 @@
     "school": "Nekromantie",
     "is_ritual": false,
     "sources": [
+      "Dhya’Khol",
       "Endgültigkeit",
-      "Totenwesen",
-      "Dhya’Khol"
+      "Totenwesen"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -4566,9 +5253,9 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
+      "Avastada",
       "Eis",
       "Endgültigkeit",
-      "Avastada",
       "Naggarach"
     ],
     "casting_time": {
@@ -4603,8 +5290,41 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Alle außer Humus",
-      "Zauberei und Khalyanar"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -4638,9 +5358,22 @@
     "school": "Erkenntnis",
     "is_ritual": true,
     "sources": [
-      "Wahnsinn",
+      "Aggari",
+      "Avastada",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Galkuzul",
+      "Ghorgumor",
+      "Iryabaar",
+      "Khalyanar",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
       "Totenwesen",
-      "alle dämonischen"
+      "Tyakaar",
+      "Wahnsinn",
+      "Xolovar"
     ],
     "casting_time": {
       "base_time": "1 Minute",
@@ -4675,11 +5408,11 @@
     "is_ritual": false,
     "sources": [
       "Feuer",
-      "Luft",
-      "Wasser",
       "Galkuzul",
+      "Luft",
       "Thesephai",
       "Tyakaar",
+      "Wasser",
       "Xolovar"
     ],
     "casting_time": {
@@ -4751,11 +5484,11 @@
     "school": "Erkenntnis",
     "is_ritual": false,
     "sources": [
-      "Humus",
       "Erkenntnis",
-      "Tiergeister",
+      "Humus",
       "Khalyanar",
-      "Naggarach"
+      "Naggarach",
+      "Tiergeister"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -4790,14 +5523,14 @@
     "is_ritual": false,
     "sources": [
       "Aggression",
-      "Begierde",
-      "Endgültigkeit",
-      "Erfolg",
-      "Tiergeister",
       "Avastada",
+      "Begierde",
       "Carafai",
       "Darcalya",
-      "Ghorgumor"
+      "Endgültigkeit",
+      "Erfolg",
+      "Ghorgumor",
+      "Tiergeister"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -4831,19 +5564,35 @@
     "school": "Verzauberung",
     "is_ritual": false,
     "sources": [
-      "Alle elementaren außer Luft",
+      "Aggari",
       "Aggression",
+      "Avastada",
       "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
       "Endgültigkeit",
       "Erfolg",
       "Erkenntnis",
+      "Erz",
+      "Feuer",
       "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
       "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
       "Kreativität",
-      "Wahnsinn",
-      "Totenwesen",
+      "Naggarach",
       "Tiergeister",
-      "alle dämonischen außer Mishkarya und Thesephai",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Xolovar",
       "Zeit"
     ],
     "casting_time": {
@@ -4878,13 +5627,13 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Humus",
-      "Luft",
       "Freiheit",
-      "Tiergeister",
       "Ghorgumor",
+      "Humus",
       "Khalyanar",
+      "Luft",
       "Thesephai",
+      "Tiergeister",
       "Zeit"
     ],
     "casting_time": {
@@ -4919,13 +5668,13 @@
     "school": "Illusion",
     "is_ritual": false,
     "sources": [
-      "Luft",
-      "Kreativität",
-      "Wahnsinn",
-      "Totenwesen",
       "Dhya’Khol",
       "Iryabaar",
-      "Thesephai"
+      "Kreativität",
+      "Luft",
+      "Thesephai",
+      "Totenwesen",
+      "Wahnsinn"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -4959,9 +5708,9 @@
     "school": "Nekromantie",
     "is_ritual": false,
     "sources": [
-      "Totenwesen",
       "Dhya’Khol",
       "Mishkarya",
+      "Totenwesen",
       "Zeit"
     ],
     "casting_time": {
@@ -4996,10 +5745,10 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Feuer",
-      "Kraft",
       "Aggression",
       "Carafai",
+      "Feuer",
+      "Kraft",
       "Tyakaar"
     ],
     "casting_time": {
@@ -5035,12 +5784,12 @@
     "is_ritual": false,
     "sources": [
       "Aggression",
+      "Avastada",
+      "Carafai",
       "Endgültigkeit",
       "Erfolg",
       "Freiheit",
-      "Harmonie",
-      "Avastada",
-      "Carafai"
+      "Harmonie"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -5109,11 +5858,11 @@
     "school": "Illusion",
     "is_ritual": false,
     "sources": [
-      "Luft",
       "Begierde",
+      "Darcalya",
       "Erkenntnis",
       "Freiheit",
-      "Darcalya",
+      "Luft",
       "Thesephai",
       "Xolovar"
     ],
@@ -5149,14 +5898,14 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Erz",
-      "Wasser",
-      "Aggression",
-      "Tiergeister",
       "Aggari",
+      "Aggression",
       "Carafai",
+      "Erz",
       "Galkuzul",
-      "Ghorgumor"
+      "Ghorgumor",
+      "Tiergeister",
+      "Wasser"
     ],
     "casting_time": {
       "base_time": "1 Bonusaktion, die du sofort ausführst, wenn du ein Ziel mit einer Nahkampfwaffe oder einem waffenlosen Angriff getroffen hast",
@@ -5190,11 +5939,11 @@
     "school": "Illusion",
     "is_ritual": false,
     "sources": [
-      "Luft",
-      "Kreativität",
-      "Wahnsinn",
       "Iryabaar",
-      "Thesephai"
+      "Kreativität",
+      "Luft",
+      "Thesephai",
+      "Wahnsinn"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -5228,7 +5977,42 @@
     "school": "Bannzauber",
     "is_ritual": false,
     "sources": [
-      "Quellenunabhängig"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -5262,7 +6046,42 @@
     "school": "Erkenntnis",
     "is_ritual": true,
     "sources": [
-      "Quellenunabhängig"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -5296,7 +6115,41 @@
     "school": "Bannzauber",
     "is_ritual": false,
     "sources": [
-      "Alle außer Zauberei"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -5399,10 +6252,10 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Kraft",
       "Aggression",
-      "Zauberei",
-      "Carafai"
+      "Carafai",
+      "Kraft",
+      "Zauberei"
     ],
     "casting_time": {
       "base_time": "1 Bonusaktion",
@@ -5438,14 +6291,14 @@
     "sources": [
       "Aggression",
       "Begierde",
-      "Erfolg",
-      "Harmonie",
-      "Kreativität",
-      "Wahnsinn",
       "Carafai",
       "Darcalya",
+      "Erfolg",
       "Ghorgumor",
+      "Harmonie",
       "Iryabaar",
+      "Kreativität",
+      "Wahnsinn",
       "Xolovar"
     ],
     "casting_time": {
@@ -5480,19 +6333,19 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Humus",
       "Aggression",
       "Begierde",
+      "Carafai",
+      "Darcalya",
       "Endgültigkeit",
       "Erfolg",
       "Freiheit",
       "Harmonie",
-      "Kreativität",
-      "Wahnsinn",
-      "Carafai",
-      "Darcalya",
+      "Humus",
       "Iryabaar",
       "Khalyanar",
+      "Kreativität",
+      "Wahnsinn",
       "Xolovar",
       "Zeit"
     ],
@@ -5564,19 +6417,19 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Humus",
       "Aggression",
       "Begierde",
+      "Carafai",
+      "Darcalya",
       "Endgültigkeit",
       "Erfolg",
       "Freiheit",
       "Harmonie",
-      "Kreativität",
-      "Wahnsinn",
-      "Carafai",
-      "Darcalya",
+      "Humus",
       "Iryabaar",
       "Khalyanar",
+      "Kreativität",
+      "Wahnsinn",
       "Xolovar",
       "Zeit"
     ],
@@ -5612,8 +6465,8 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Feuer",
       "Aggari",
+      "Feuer",
       "Tyakaar"
     ],
     "casting_time": {
@@ -5648,9 +6501,9 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
+      "Aggari",
       "Erz",
       "Feuer",
-      "Aggari",
       "Tyakaar"
     ],
     "casting_time": {
@@ -5685,9 +6538,9 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Humus",
       "Erkenntnis",
       "Harmonie",
+      "Humus",
       "Khalyanar"
     ],
     "casting_time": {
@@ -5722,9 +6575,9 @@
     "school": "Erkenntnis",
     "is_ritual": true,
     "sources": [
-      "Tiergeister",
       "Galkuzul",
-      "Ghorgumor"
+      "Ghorgumor",
+      "Tiergeister"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -5758,8 +6611,8 @@
     "school": "Nekromantie",
     "is_ritual": false,
     "sources": [
-      "Totenwesen",
-      "Dhya’Khol"
+      "Dhya’Khol",
+      "Totenwesen"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -5793,13 +6646,19 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Alle elementaren",
       "Aggari",
+      "Eis",
+      "Erz",
+      "Feuer",
       "Galkuzul",
+      "Humus",
       "Khalyanar",
+      "Kraft",
+      "Luft",
       "Naggarach",
       "Thesephai",
-      "Tyakaar"
+      "Tyakaar",
+      "Wasser"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -5833,7 +6692,7 @@
     "school": "Beschwörung",
     "is_ritual": false,
     "sources": [
-      "Nur Weihe"
+      "Weihe"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -5868,9 +6727,9 @@
     "is_ritual": true,
     "sources": [
       "Humus",
-      "Wasser",
       "Khalyanar",
-      "Mishkarya"
+      "Mishkarya",
+      "Wasser"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -5904,10 +6763,10 @@
     "school": "Beschwörung",
     "is_ritual": false,
     "sources": [
-      "Luft",
-      "Wasser",
       "Kraft",
+      "Luft",
       "Thesephai",
+      "Wasser",
       "Zeit"
     ],
     "casting_time": {
@@ -5942,10 +6801,10 @@
     "school": "Beschwörung",
     "is_ritual": false,
     "sources": [
-      "Luft",
-      "Wasser",
       "Kraft",
+      "Luft",
       "Thesephai",
+      "Wasser",
       "Zeit"
     ],
     "casting_time": {
@@ -5980,10 +6839,10 @@
     "school": "Beschwörung",
     "is_ritual": false,
     "sources": [
-      "Humus",
-      "Tiergeister",
       "Avastada",
-      "Khalyanar"
+      "Humus",
+      "Khalyanar",
+      "Tiergeister"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -6017,7 +6876,42 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Quellenunabhängig"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "10 Minuten",
@@ -6051,7 +6945,42 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Alle"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -6085,10 +7014,10 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
+      "Aggari",
       "Erz",
-      "Kraft",
       "Freiheit",
-      "Aggari"
+      "Kraft"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -6159,18 +7088,18 @@
     "is_ritual": false,
     "sources": [
       "Aggression",
+      "Avastada",
       "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
       "Endgültigkeit",
       "Erfolg",
       "Freiheit",
       "Harmonie",
-      "Wahnsinn",
-      "Totenwesen",
-      "Avastada",
-      "Carafai",
-      "Darcalya",
-      "Dhya’Khol",
       "Iryabaar",
+      "Totenwesen",
+      "Wahnsinn",
       "Xolovar"
     ],
     "casting_time": {
@@ -6206,10 +7135,10 @@
     "is_ritual": false,
     "sources": [
       "Begierde",
-      "Erfolg",
-      "Harmonie",
       "Darcalya",
+      "Erfolg",
       "Ghorgumor",
+      "Harmonie",
       "Xolovar"
     ],
     "casting_time": {
@@ -6244,27 +7173,32 @@
     "school": "Verzauberung",
     "is_ritual": false,
     "sources": [
-      "Alle elementaren außer Kraft",
-      "Aggression",
-      "Begierde",
-      "Endgültigkeit",
-      "Erfolg",
-      "Erkenntnis",
-      "Freiheit",
-      "Harmonie",
-      "Kreativität",
-      "Wahnsinn",
-      "Totenwesen",
       "Aggari",
+      "Aggression",
       "Avastada",
+      "Begierde",
       "Carafai",
       "Darcalya",
       "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
       "Galkuzul",
+      "Harmonie",
+      "Humus",
       "Iryabaar",
       "Khalyanar",
+      "Kreativität",
+      "Luft",
       "Naggarach",
+      "Totenwesen",
       "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
       "Xolovar",
       "Zeit"
     ],
@@ -6335,7 +7269,42 @@
     "school": "Erkenntnis",
     "is_ritual": false,
     "sources": [
-      "Quellenunabhängig"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -6403,13 +7372,13 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Luft",
       "Aggression",
-      "Freiheit",
-      "Tiergeister",
       "Carafai",
+      "Freiheit",
       "Ghorgumor",
+      "Luft",
       "Thesephai",
+      "Tiergeister",
       "Zeit"
     ],
     "casting_time": {
@@ -6445,10 +7414,10 @@
     "is_ritual": false,
     "sources": [
       "Begierde",
+      "Darcalya",
       "Erfolg",
       "Harmonie",
       "Kreativität",
-      "Darcalya",
       "Xolovar"
     ],
     "casting_time": {
@@ -6519,15 +7488,15 @@
     "school": "Beschwörung",
     "is_ritual": false,
     "sources": [
+      "Aggari",
       "Eis",
       "Erz",
-      "Humus",
-      "Tiergeister",
-      "Aggari",
       "Galkuzul",
       "Ghorgumor",
+      "Humus",
       "Khalyanar",
-      "Naggarach"
+      "Naggarach",
+      "Tiergeister"
     ],
     "casting_time": {
       "base_time": "10 Minuten",
@@ -6634,11 +7603,11 @@
     "school": "Erkenntnis",
     "is_ritual": false,
     "sources": [
+      "Avastada",
+      "Dhya’Khol",
       "Endgültigkeit",
       "Erkenntnis",
       "Totenwesen",
-      "Avastada",
-      "Dhya’Khol",
       "Zeit"
     ],
     "casting_time": {
@@ -6673,8 +7642,8 @@
     "school": "Nekromantie",
     "is_ritual": true,
     "sources": [
-      "Totenwesen",
       "Dhya’Khol",
+      "Totenwesen",
       "Zeit"
     ],
     "casting_time": {
@@ -6709,19 +7678,38 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Alle elementaren",
+      "Aggari",
       "Aggression",
+      "Avastada",
       "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
       "Endgültigkeit",
       "Erfolg",
       "Erkenntnis",
+      "Erz",
+      "Feuer",
       "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
       "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
       "Kreativität",
-      "Wahnsinn",
-      "Totenwesen",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
       "Tiergeister",
-      "alle dämonischen"
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Xolovar"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -6755,7 +7743,42 @@
     "school": "Beschwörung",
     "is_ritual": false,
     "sources": [
-      "Alle"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -6789,7 +7812,40 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Alle außer Humus und Khalyanar"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Iryabaar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -6823,18 +7879,18 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
+      "Dhya’Khol",
       "Eis",
       "Feuer",
-      "Luft",
-      "Wasser",
-      "Kraft",
-      "Totenwesen",
-      "Dhya’Khol",
       "Galkuzul",
+      "Kraft",
+      "Luft",
       "Mishkarya",
       "Naggarach",
       "Thesephai",
+      "Totenwesen",
       "Tyakaar",
+      "Wasser",
       "Zeit"
     ],
     "casting_time": {
@@ -6869,10 +7925,10 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Humus",
-      "Tiergeister",
       "Ghorgumor",
-      "Khalyanar"
+      "Humus",
+      "Khalyanar",
+      "Tiergeister"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -6906,9 +7962,9 @@
     "school": "Illusion",
     "is_ritual": false,
     "sources": [
+      "Iryabaar",
       "Kreativität",
-      "Wahnsinn",
-      "Iryabaar"
+      "Wahnsinn"
     ],
     "casting_time": {
       "base_time": "10 Minuten",
@@ -6942,9 +7998,35 @@
     "school": "Bannzauber",
     "is_ritual": false,
     "sources": [
-      "Alle elementaren",
-      "alle stellaren außer Zauberei",
-      "alle dämonischen außer Ghorgumor",
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Xolovar",
       "Zeit"
     ],
     "casting_time": {
@@ -6979,7 +8061,7 @@
     "school": "Bannzauber",
     "is_ritual": false,
     "sources": [
-      "Nur Weihe"
+      "Weihe"
     ],
     "casting_time": {
       "base_time": "1 Bonusaktion",
@@ -7013,9 +8095,9 @@
     "school": "Verzauberung",
     "is_ritual": false,
     "sources": [
-      "Luft",
-      "Endgültigkeit",
       "Avastada",
+      "Endgültigkeit",
+      "Luft",
       "Thesephai"
     ],
     "casting_time": {
@@ -7051,8 +8133,8 @@
     "is_ritual": false,
     "sources": [
       "Eis",
-      "Wasser",
-      "Naggarach"
+      "Naggarach",
+      "Wasser"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -7086,12 +8168,17 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Alle elementaren außer Humus",
       "Aggari",
+      "Eis",
+      "Erz",
+      "Feuer",
       "Galkuzul",
+      "Kraft",
+      "Luft",
       "Naggarach",
       "Thesephai",
-      "Tyakaar"
+      "Tyakaar",
+      "Wasser"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -7160,7 +8247,42 @@
     "school": "Bannzauber",
     "is_ritual": false,
     "sources": [
-      "Quellenunabhängig"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -7265,7 +8387,42 @@
     "school": "Beschwörung",
     "is_ritual": false,
     "sources": [
-      "Alle"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -7299,11 +8456,37 @@
     "school": "Bannzauber",
     "is_ritual": false,
     "sources": [
-      "Alle elementaren außer Erz",
-      "alle stellaren",
-      "Totenwesen",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
       "Tiergeister",
-      "alle dämonischen außer Aggari"
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Xolovar",
+      "Zauberei"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -7337,7 +8520,42 @@
     "school": "Bannzauber",
     "is_ritual": false,
     "sources": [
-      "Quellenunabhängig"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "1 Minute",
@@ -7407,12 +8625,12 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Endgültigkeit",
-      "Totenwesen",
       "Avastada",
       "Carafai",
       "Dhya’Khol",
-      "Naggarach"
+      "Endgültigkeit",
+      "Naggarach",
+      "Totenwesen"
     ],
     "casting_time": {
       "base_time": "1 Bonusaktion, die du sofort ausführst, wenn du ein Ziel mit einer Nahkampfwaffe oder einem waffenlosen Angriff getroffen hast",
@@ -7446,14 +8664,14 @@
     "school": "Nekromantie",
     "is_ritual": false,
     "sources": [
-      "Humus",
-      "Kraft",
-      "Totenwesen",
-      "Tiergeister",
       "Dhya’Khol",
       "Ghorgumor",
+      "Humus",
       "Khalyanar",
-      "Mishkarya"
+      "Kraft",
+      "Mishkarya",
+      "Tiergeister",
+      "Totenwesen"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -7488,21 +8706,21 @@
     "is_ritual": false,
     "sources": [
       "Aggression",
+      "Avastada",
       "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
       "Endgültigkeit",
       "Erfolg",
       "Erkenntnis",
       "Freiheit",
       "Harmonie",
-      "Kreativität",
-      "Wahnsinn",
-      "Totenwesen",
-      "Avastada",
-      "Carafai",
-      "Darcalya",
-      "Dhya’Khol",
       "Iryabaar",
+      "Kreativität",
       "Mishkarya",
+      "Totenwesen",
+      "Wahnsinn",
       "Xolovar"
     ],
     "casting_time": {
@@ -7537,13 +8755,13 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Luft",
-      "Kraft",
-      "Totenwesen",
-      "Tiergeister",
       "Dhya’Khol",
       "Ghorgumor",
-      "Thesephai"
+      "Kraft",
+      "Luft",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -7577,8 +8795,8 @@
     "school": "Beschwörung",
     "is_ritual": true,
     "sources": [
-      "Luft",
       "Kraft",
+      "Luft",
       "Thesephai"
     ],
     "casting_time": {
@@ -7614,13 +8832,13 @@
     "is_ritual": false,
     "sources": [
       "Aggression",
+      "Carafai",
       "Erfolg",
       "Erkenntnis",
       "Freiheit",
+      "Ghorgumor",
       "Kreativität",
       "Tiergeister",
-      "Carafai",
-      "Ghorgumor",
       "Zeit"
     ],
     "casting_time": {
@@ -7655,12 +8873,12 @@
     "school": "Illusion",
     "is_ritual": false,
     "sources": [
-      "Luft",
       "Harmonie",
-      "Kreativität",
-      "Wahnsinn",
       "Iryabaar",
-      "Thesephai"
+      "Kreativität",
+      "Luft",
+      "Thesephai",
+      "Wahnsinn"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -7694,7 +8912,7 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Nur Weihe"
+      "Weihe"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -7728,7 +8946,7 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Nur Weihe"
+      "Weihe"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -7762,18 +8980,32 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Alle elementaren außer Humus",
-      "alle stellaren",
       "Aggari",
+      "Aggression",
       "Avastada",
+      "Begierde",
       "Carafai",
       "Darcalya",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
       "Galkuzul",
+      "Harmonie",
       "Iryabaar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
       "Naggarach",
       "Thesephai",
       "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
       "Xolovar",
+      "Zauberei",
       "Zeit"
     ],
     "casting_time": {
@@ -7808,11 +9040,11 @@
     "school": "Illusion",
     "is_ritual": false,
     "sources": [
-      "Luft",
-      "Kreativität",
-      "Wahnsinn",
       "Iryabaar",
+      "Kreativität",
+      "Luft",
       "Thesephai",
+      "Wahnsinn",
       "Zeit"
     ],
     "casting_time": {
@@ -7847,10 +9079,10 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Humus",
-      "Tiergeister",
       "Avastada",
-      "Khalyanar"
+      "Humus",
+      "Khalyanar",
+      "Tiergeister"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -7920,17 +9152,17 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Feuer",
-      "Humus",
-      "Luft",
       "Aggression",
-      "Erfolg",
-      "Freiheit",
-      "Tiergeister",
       "Carafai",
+      "Erfolg",
+      "Feuer",
+      "Freiheit",
       "Ghorgumor",
+      "Humus",
       "Khalyanar",
+      "Luft",
       "Thesephai",
+      "Tiergeister",
       "Tyakaar"
     ],
     "casting_time": {
@@ -7965,8 +9197,8 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Erz",
-      "Aggari"
+      "Aggari",
+      "Erz"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -8000,8 +9232,8 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Erz",
-      "Aggari"
+      "Aggari",
+      "Erz"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -8107,8 +9339,8 @@
     "sources": [
       "Eis",
       "Feuer",
-      "Luft",
       "Kraft",
+      "Luft",
       "Naggarach",
       "Thesephai",
       "Tyakaar"
@@ -8147,8 +9379,8 @@
     "sources": [
       "Eis",
       "Luft",
-      "Wasser",
-      "Thesephai"
+      "Thesephai",
+      "Wasser"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -8182,7 +9414,42 @@
     "school": "Bannzauber",
     "is_ritual": false,
     "sources": [
-      "Quellenunabhängig"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "1 Minute",
@@ -8216,7 +9483,7 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Nur Weihe"
+      "Weihe"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -8286,8 +9553,8 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Luft",
       "Kraft",
+      "Luft",
       "Thesephai"
     ],
     "casting_time": {
@@ -8392,10 +9659,10 @@
     "is_ritual": false,
     "sources": [
       "Begierde",
-      "Tiergeister",
       "Darcalya",
       "Galkuzul",
-      "Ghorgumor"
+      "Ghorgumor",
+      "Tiergeister"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -8429,8 +9696,8 @@
     "school": "Verzauberung",
     "is_ritual": true,
     "sources": [
-      "Tiergeister",
-      "Ghorgumor"
+      "Ghorgumor",
+      "Tiergeister"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -8464,8 +9731,8 @@
     "school": "Beschwörung",
     "is_ritual": false,
     "sources": [
-      "Tiergeister",
-      "Ghorgumor"
+      "Ghorgumor",
+      "Tiergeister"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -8500,8 +9767,8 @@
     "is_ritual": true,
     "sources": [
       "Humus",
-      "Tiergeister",
-      "Khalyanar"
+      "Khalyanar",
+      "Tiergeister"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -8535,11 +9802,11 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Humus",
-      "Tiergeister",
       "Galkuzul",
       "Ghorgumor",
-      "Khalyanar"
+      "Humus",
+      "Khalyanar",
+      "Tiergeister"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -8575,9 +9842,9 @@
     "sources": [
       "Aggression",
       "Begierde",
+      "Ghorgumor",
       "Harmonie",
-      "Tiergeister",
-      "Ghorgumor"
+      "Tiergeister"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -8611,7 +9878,41 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Alle außer Humus"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -8645,22 +9946,22 @@
     "school": "Bannzauber",
     "is_ritual": false,
     "sources": [
-      "Kraft",
       "Aggression",
-      "Begierde",
-      "Endgültigkeit",
-      "Erfolg",
-      "Freiheit",
-      "Harmonie",
-      "Wahnsinn",
-      "Totenwesen",
-      "Tiergeister",
       "Avastada",
+      "Begierde",
       "Carafai",
       "Darcalya",
       "Dhya’Khol",
+      "Endgültigkeit",
+      "Erfolg",
+      "Freiheit",
       "Ghorgumor",
+      "Harmonie",
       "Iryabaar",
+      "Kraft",
+      "Tiergeister",
+      "Totenwesen",
+      "Wahnsinn",
       "Xolovar",
       "Zeit"
     ],
@@ -8696,18 +9997,24 @@
     "school": "Beschwörung",
     "is_ritual": false,
     "sources": [
-      "Alle elementaren",
-      "Totenwesen",
-      "Tiergeister",
       "Aggari",
       "Dhya’Khol",
+      "Eis",
+      "Erz",
+      "Feuer",
       "Galkuzul",
       "Ghorgumor",
+      "Humus",
       "Khalyanar",
+      "Kraft",
+      "Luft",
       "Mishkarya",
       "Naggarach",
       "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
       "Tyakaar",
+      "Wasser",
       "Zeit"
     ],
     "casting_time": {
@@ -8742,14 +10049,23 @@
     "school": "Illusion",
     "is_ritual": false,
     "sources": [
-      "Alle stellaren",
-      "Totenwesen",
+      "Aggression",
       "Avastada",
+      "Begierde",
       "Carafai",
       "Darcalya",
       "Dhya’Khol",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Freiheit",
+      "Harmonie",
       "Iryabaar",
-      "Xolovar"
+      "Kreativität",
+      "Totenwesen",
+      "Wahnsinn",
+      "Xolovar",
+      "Zauberei"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -8783,24 +10099,33 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Eis",
-      "Feuer",
-      "Luft",
-      "Kraft",
-      "alle stellaren",
-      "Totenwesen",
-      "Tiergeister",
+      "Aggression",
       "Avastada",
+      "Begierde",
       "Carafai",
       "Darcalya",
       "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Feuer",
+      "Freiheit",
       "Ghorgumor",
+      "Harmonie",
       "Iryabaar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
       "Mishkarya",
       "Naggarach",
       "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
       "Tyakaar",
+      "Wahnsinn",
       "Xolovar",
+      "Zauberei",
       "Zeit"
     ],
     "casting_time": {
@@ -8835,9 +10160,9 @@
     "school": "Nekromantie",
     "is_ritual": false,
     "sources": [
-      "Totenwesen",
       "Dhya’Khol",
-      "Galkuzul"
+      "Galkuzul",
+      "Totenwesen"
     ],
     "casting_time": {
       "base_time": "1 Minute",
@@ -8905,10 +10230,10 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
+      "Aggari",
       "Eis",
       "Erz",
       "Luft",
-      "Aggari",
       "Naggarach",
       "Thesephai",
       "Zeit"
@@ -8945,9 +10270,9 @@
     "school": "Illusion",
     "is_ritual": false,
     "sources": [
-      "Endgültigkeit",
       "Avastada",
-      "Dhya’Khol"
+      "Dhya’Khol",
+      "Endgültigkeit"
     ],
     "casting_time": {
       "base_time": "1 Minute",
@@ -8981,15 +10306,23 @@
     "school": "Beschwörung",
     "is_ritual": false,
     "sources": [
-      "Alle stellaren außer Wahnsinn",
-      "Tiergeister",
-      "Totenwesen",
+      "Aggression",
       "Avastada",
+      "Begierde",
       "Carafai",
       "Darcalya",
       "Dhya’Khol",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Freiheit",
       "Ghorgumor",
-      "Xolovar"
+      "Harmonie",
+      "Kreativität",
+      "Tiergeister",
+      "Totenwesen",
+      "Xolovar",
+      "Zauberei"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -9023,9 +10356,9 @@
     "school": "Illusion",
     "is_ritual": false,
     "sources": [
+      "Iryabaar",
       "Kreativität",
-      "Wahnsinn",
-      "Iryabaar"
+      "Wahnsinn"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -9095,12 +10428,12 @@
     "school": "Bannzauber",
     "is_ritual": false,
     "sources": [
+      "Aggari",
       "Eis",
       "Erz",
-      "Wasser",
-      "Aggari",
       "Galkuzul",
-      "Naggarach"
+      "Naggarach",
+      "Wasser"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -9134,12 +10467,12 @@
     "school": "Illusion",
     "is_ritual": false,
     "sources": [
-      "Endgültigkeit",
-      "Wahnsinn",
-      "Totenwesen",
       "Avastada",
       "Dhya’Khol",
-      "Iryabaar"
+      "Endgültigkeit",
+      "Iryabaar",
+      "Totenwesen",
+      "Wahnsinn"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -9173,12 +10506,12 @@
     "school": "Beschwörung",
     "is_ritual": false,
     "sources": [
+      "Aggari",
       "Eis",
       "Erz",
-      "Wasser",
-      "Aggari",
       "Galkuzul",
-      "Naggarach"
+      "Naggarach",
+      "Wasser"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -9212,10 +10545,10 @@
     "school": "Beschwörung",
     "is_ritual": true,
     "sources": [
-      "Totenwesen",
-      "Tiergeister",
       "Dhya’Khol",
-      "Ghorgumor"
+      "Ghorgumor",
+      "Tiergeister",
+      "Totenwesen"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -9284,11 +10617,11 @@
     "school": "Illusion",
     "is_ritual": false,
     "sources": [
-      "Luft",
       "Begierde",
+      "Darcalya",
       "Erkenntnis",
       "Freiheit",
-      "Darcalya",
+      "Luft",
       "Thesephai",
       "Xolovar"
     ],
@@ -9324,9 +10657,9 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
+      "Aggari",
       "Eis",
       "Erz",
-      "Aggari",
       "Naggarach"
     ],
     "casting_time": {
@@ -9361,7 +10694,42 @@
     "school": "Bannzauber",
     "is_ritual": false,
     "sources": [
-      "Quellenunabhängig"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "1 Stunde",
@@ -9395,8 +10763,8 @@
     "school": "Nekromantie",
     "is_ritual": false,
     "sources": [
-      "Totenwesen",
-      "Dhya’Khol"
+      "Dhya’Khol",
+      "Totenwesen"
     ],
     "casting_time": {
       "base_time": "1 Minute",
@@ -9430,9 +10798,9 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
+      "Aggari",
       "Erz",
       "Kraft",
-      "Aggari",
       "Zeit"
     ],
     "casting_time": {
@@ -9468,12 +10836,12 @@
     "is_ritual": false,
     "sources": [
       "Begierde",
-      "Freiheit",
-      "Wahnsinn",
-      "Totenwesen",
       "Darcalya",
+      "Freiheit",
       "Iryabaar",
       "Mishkarya",
+      "Totenwesen",
+      "Wahnsinn",
       "Xolovar"
     ],
     "casting_time": {
@@ -9543,9 +10911,9 @@
     "school": "Nekromantie",
     "is_ritual": false,
     "sources": [
-      "Totenwesen",
       "Dhya’Khol",
-      "Mishkarya"
+      "Mishkarya",
+      "Totenwesen"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -9614,17 +10982,26 @@
     "school": "Verzauberung",
     "is_ritual": false,
     "sources": [
-      "Alle stellaren",
-      "Totenwesen",
-      "Tiergeister",
+      "Aggression",
       "Avastada",
+      "Begierde",
       "Carafai",
       "Darcalya",
       "Dhya’Khol",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Freiheit",
       "Ghorgumor",
+      "Harmonie",
       "Iryabaar",
+      "Kreativität",
       "Mishkarya",
-      "Xolovar"
+      "Tiergeister",
+      "Totenwesen",
+      "Wahnsinn",
+      "Xolovar",
+      "Zauberei"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -9658,7 +11035,42 @@
     "school": "Beschwörung",
     "is_ritual": false,
     "sources": [
-      "Alle"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei",
+      "Zeit"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -9692,11 +11104,37 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Alle elementaren außer Humus",
-      "alle stellaren",
-      "Totenwesen",
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Harmonie",
+      "Iryabaar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
       "Tiergeister",
-      "alle dämonischen außer Khalyanar"
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Xolovar",
+      "Zauberei"
     ],
     "casting_time": {
       "base_time": "1 Reaktion",
@@ -9730,19 +11168,19 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Eis",
-      "Erz",
-      "Aggression",
-      "Endgültigkeit",
-      "Erfolg",
-      "Freiheit",
-      "Kreativität",
-      "Wahnsinn",
       "Aggari",
+      "Aggression",
       "Avastada",
       "Carafai",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erz",
+      "Freiheit",
       "Iryabaar",
+      "Kreativität",
       "Naggarach",
+      "Wahnsinn",
       "Zeit"
     ],
     "casting_time": {
@@ -9777,13 +11215,18 @@
     "school": "Beschwörung",
     "is_ritual": false,
     "sources": [
-      "Alle elementaren außer Kraft",
       "Aggari",
+      "Eis",
+      "Erz",
+      "Feuer",
       "Galkuzul",
+      "Humus",
       "Khalyanar",
+      "Luft",
       "Naggarach",
       "Thesephai",
-      "Tyakaar"
+      "Tyakaar",
+      "Wasser"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -9817,20 +11260,20 @@
     "school": "Nekromantie",
     "is_ritual": false,
     "sources": [
-      "Humus",
       "Aggression",
+      "Avastada",
       "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
       "Endgültigkeit",
       "Erfolg",
       "Freiheit",
       "Harmonie",
-      "Totenwesen",
+      "Humus",
+      "Khalyanar",
       "Tiergeister",
-      "Avastada",
-      "Carafai",
-      "Darcalya",
-      "Dhya’Khol",
-      "Khalyanar"
+      "Totenwesen"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -9864,20 +11307,20 @@
     "school": "Illusion",
     "is_ritual": false,
     "sources": [
-      "Feuer",
-      "Luft",
-      "Wasser",
       "Aggression",
-      "Erkenntnis",
-      "Freiheit",
-      "Harmonie",
-      "Kreativität",
-      "Wahnsinn",
       "Carafai",
+      "Erkenntnis",
+      "Feuer",
+      "Freiheit",
       "Galkuzul",
+      "Harmonie",
       "Iryabaar",
+      "Kreativität",
+      "Luft",
       "Thesephai",
-      "Tyakaar"
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -9947,8 +11390,8 @@
     "is_ritual": false,
     "sources": [
       "Begierde",
-      "Harmonie",
       "Darcalya",
+      "Harmonie",
       "Xolovar"
     ],
     "casting_time": {
@@ -9983,11 +11426,11 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Humus",
-      "Tiergeister",
       "Galkuzul",
       "Ghorgumor",
-      "Khalyanar"
+      "Humus",
+      "Khalyanar",
+      "Tiergeister"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -10022,20 +11465,20 @@
     "is_ritual": false,
     "sources": [
       "Aggression",
-      "Begierde",
-      "Endgültigkeit",
-      "Erkenntnis",
-      "Freiheit",
-      "Kreativität",
-      "Wahnsinn",
-      "Totenwesen",
-      "Tiergeister",
       "Avastada",
+      "Begierde",
       "Carafai",
       "Darcalya",
       "Dhya’Khol",
+      "Endgültigkeit",
+      "Erkenntnis",
+      "Freiheit",
       "Ghorgumor",
       "Iryabaar",
+      "Kreativität",
+      "Tiergeister",
+      "Totenwesen",
+      "Wahnsinn",
       "Xolovar"
     ],
     "casting_time": {
@@ -10070,10 +11513,10 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Tiergeister",
       "Carafai",
       "Ghorgumor",
-      "Naggarach"
+      "Naggarach",
+      "Tiergeister"
     ],
     "casting_time": {
       "base_time": "1 Bonusaktion, die du sofort ausführst, wenn du ein Ziel mit einer Nahkampfwaffe oder einem waffenlosen Angriff getroffen hast",
@@ -10142,9 +11585,9 @@
     "school": "Erkenntnis",
     "is_ritual": false,
     "sources": [
+      "Avastada",
       "Endgültigkeit",
       "Erkenntnis",
-      "Avastada",
       "Zeit"
     ],
     "casting_time": {
@@ -10179,9 +11622,9 @@
     "school": "Illusion",
     "is_ritual": false,
     "sources": [
+      "Iryabaar",
       "Kreativität",
-      "Wahnsinn",
-      "Iryabaar"
+      "Wahnsinn"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -10215,7 +11658,40 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Alle außer Kreativität und Zeit"
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Gift",
+      "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
+      "Tiergeister",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Weihe",
+      "Xolovar",
+      "Zauberei"
     ],
     "casting_time": {
       "base_time": "1 Bonusaktion",
@@ -10249,10 +11725,37 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Alle elementaren außer Humus",
+      "Aggari",
+      "Aggression",
+      "Avastada",
+      "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Erz",
+      "Feuer",
+      "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
+      "Harmonie",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
+      "Kreativität",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
       "Totenwesen",
-      "alle stellaren",
-      "alle dämonischen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Xolovar",
+      "Zauberei",
       "Zeit"
     ],
     "casting_time": {
@@ -10356,8 +11859,8 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Erz",
-      "Aggari"
+      "Aggari",
+      "Erz"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -10391,9 +11894,9 @@
     "school": "Verwandlung",
     "is_ritual": true,
     "sources": [
+      "Galkuzul",
       "Luft",
-      "Wasser",
-      "Galkuzul"
+      "Wasser"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -10427,8 +11930,8 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Wasser",
-      "Galkuzul"
+      "Galkuzul",
+      "Wasser"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -10462,8 +11965,8 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
-      "Wasser",
-      "Galkuzul"
+      "Galkuzul",
+      "Wasser"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -10532,7 +12035,7 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Nur Weihe"
+      "Weihe"
     ],
     "casting_time": {
       "base_time": "24 Stunden",
@@ -10603,9 +12106,9 @@
     "sources": [
       "Eis",
       "Luft",
-      "Wasser",
       "Naggarach",
-      "Thesephai"
+      "Thesephai",
+      "Wasser"
     ],
     "casting_time": {
       "base_time": "10 Minuten",
@@ -10639,10 +12142,10 @@
     "school": "Nekromantie",
     "is_ritual": false,
     "sources": [
-      "Humus",
-      "Totenwesen",
       "Dhya’Khol",
+      "Humus",
       "Khalyanar",
+      "Totenwesen",
       "Zeit"
     ],
     "casting_time": {
@@ -10677,10 +12180,10 @@
     "school": "Beschwörung",
     "is_ritual": false,
     "sources": [
-      "Luft",
-      "Wasser",
       "Galkuzul",
-      "Thesephai"
+      "Luft",
+      "Thesephai",
+      "Wasser"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -10714,10 +12217,10 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Luft",
-      "Wasser",
       "Galkuzul",
-      "Thesephai"
+      "Luft",
+      "Thesephai",
+      "Wasser"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -10751,10 +12254,10 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Luft",
-      "Wasser",
       "Galkuzul",
-      "Thesephai"
+      "Luft",
+      "Thesephai",
+      "Wasser"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -10858,12 +12361,21 @@
     "school": "Verzauberung",
     "is_ritual": false,
     "sources": [
-      "Alle stellaren",
+      "Aggression",
       "Avastada",
+      "Begierde",
       "Carafai",
       "Darcalya",
+      "Endgültigkeit",
+      "Erfolg",
+      "Erkenntnis",
+      "Freiheit",
+      "Harmonie",
       "Iryabaar",
-      "Xolovar"
+      "Kreativität",
+      "Wahnsinn",
+      "Xolovar",
+      "Zauberei"
     ],
     "casting_time": {
       "base_time": "1 Aktion",
@@ -10897,8 +12409,8 @@
     "school": "Verzauberung",
     "is_ritual": false,
     "sources": [
-      "Totenwesen",
       "Dhya’Khol",
+      "Totenwesen",
       "Zeit"
     ],
     "casting_time": {
@@ -10933,19 +12445,19 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Humus",
       "Aggression",
       "Begierde",
+      "Carafai",
+      "Darcalya",
       "Endgültigkeit",
       "Erfolg",
       "Freiheit",
       "Harmonie",
-      "Kreativität",
-      "Wahnsinn",
-      "Carafai",
-      "Darcalya",
+      "Humus",
       "Iryabaar",
       "Khalyanar",
+      "Kreativität",
+      "Wahnsinn",
       "Xolovar",
       "Zeit"
     ],
@@ -10981,19 +12493,38 @@
     "school": "Hervorrufung",
     "is_ritual": false,
     "sources": [
-      "Alle elementaren",
+      "Aggari",
       "Aggression",
+      "Avastada",
       "Begierde",
+      "Carafai",
+      "Darcalya",
+      "Dhya’Khol",
+      "Eis",
       "Endgültigkeit",
       "Erfolg",
+      "Erz",
+      "Feuer",
       "Freiheit",
+      "Galkuzul",
+      "Ghorgumor",
       "Harmonie",
+      "Humus",
+      "Iryabaar",
+      "Khalyanar",
+      "Kraft",
       "Kreativität",
-      "Wahnsinn",
-      "Zauberei",
-      "Totenwesen",
+      "Luft",
+      "Mishkarya",
+      "Naggarach",
+      "Thesephai",
       "Tiergeister",
-      "alle dämonischen",
+      "Totenwesen",
+      "Tyakaar",
+      "Wahnsinn",
+      "Wasser",
+      "Xolovar",
+      "Zauberei",
       "Zeit"
     ],
     "casting_time": {
@@ -11028,13 +12559,13 @@
     "school": "Verwandlung",
     "is_ritual": false,
     "sources": [
+      "Aggari",
       "Eis",
       "Erz",
-      "Humus",
-      "Kraft",
-      "Aggari",
       "Galkuzul",
+      "Humus",
       "Khalyanar",
+      "Kraft",
       "Naggarach"
     ],
     "casting_time": {
@@ -11104,9 +12635,9 @@
     "school": "Erkenntnis",
     "is_ritual": false,
     "sources": [
-      "Tiergeister",
       "Ghorgumor",
-      "Naggarach"
+      "Naggarach",
+      "Tiergeister"
     ],
     "casting_time": {
       "base_time": "1 Bonusaktion",
@@ -11175,10 +12706,10 @@
     "is_ritual": false,
     "sources": [
       "Aggression",
-      "Erkenntnis",
-      "Tiergeister",
       "Carafai",
+      "Erkenntnis",
       "Ghorgumor",
+      "Tiergeister",
       "Zeit"
     ],
     "casting_time": {
@@ -11285,12 +12816,12 @@
     "sources": [
       "Aggression",
       "Begierde",
-      "Erfolg",
-      "Harmonie",
-      "Wahnsinn",
       "Carafai",
       "Darcalya",
+      "Erfolg",
+      "Harmonie",
       "Iryabaar",
+      "Wahnsinn",
       "Xolovar"
     ],
     "casting_time": {
