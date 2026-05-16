@@ -62,7 +62,7 @@ export const SpellCard: FC<SpellCardProps> = ({ spell }) => {
         <button
           className="btn-icon"
           onClick={() => toggleFavorite(spell.id)}
-          title={isFavorite ? "Remove from Favorites" : "Add to Favorites"}
+          title={isFavorite ? "Aus den Favoriten entfernen" : "Zu den Favoriten hinzufügen"}
           style={{ color: isFavorite ? 'var(--secondary)' : 'var(--text-muted)' }}
         >
           {isFavorite ? '★' : '☆'}
@@ -109,7 +109,7 @@ export const SpellCard: FC<SpellCardProps> = ({ spell }) => {
             onClick={() => removeFromDeck(spell.id)}
             style={{ width: '100%', background: 'var(--bg-surface-hover)', border: '1px solid var(--primary)' }}
           >
-            Remove from Deck
+            Aus dem Deck entfernen
           </button>
         ) : (
           <button
@@ -117,7 +117,7 @@ export const SpellCard: FC<SpellCardProps> = ({ spell }) => {
             onClick={() => addToDeck(spell.id)}
             style={{ width: '100%' }}
           >
-            Add to Deck
+            Zum Deck hinzufügen
           </button>
         )}
       </div>
