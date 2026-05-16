@@ -143,3 +143,140 @@ option {
   background: var(--bg-surface);
   color: var(--text-main);
 }
+
+/* --- Print & TCG Layout --- */
+@media print {
+  body {
+    background: white;
+    color: black;
+    min-height: auto;
+  }
+  
+  .app-container {
+    padding: 0;
+    margin: 0;
+    max-width: none;
+  }
+  
+  @page {
+    size: A4 portrait;
+    margin: 10.5mm; /* fits 3x 63mm cards perfectly across */
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .tcg-page {
+    display: grid;
+    grid-template-columns: repeat(3, 63mm);
+    grid-template-rows: repeat(3, 88mm);
+    gap: 0;
+    width: 189mm; /* 3 * 63mm */
+    height: 264mm; /* 3 * 88mm */
+    page-break-after: always;
+    break-after: page;
+  }
+
+  .tcg-card {
+    width: 63mm;
+    height: 88mm;
+    border: 0.5px solid #999;
+    background: white;
+    padding: 4mm;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    color: black;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    font-size: 7.5pt;
+    line-height: 1.25;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tcg-card * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+@media screen {
+  .tcg-preview-container {
+    background: #e2e8f0;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    color: black;
+    margin-top: 2rem;
+    overflow-x: auto;
+  }
+
+  .tcg-page {
+    display: grid;
+    grid-template-columns: repeat(3, 63mm);
+    grid-template-rows: repeat(3, 88mm);
+    gap: 0;
+    width: 189mm;
+    height: 264mm;
+    margin: 0 auto 2rem;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  }
+
+  .tcg-card {
+    width: 63mm;
+    height: 88mm;
+    border: 1px solid #ccc;
+    background: white;
+    padding: 4mm;
+    box-sizing: border-box;
+    color: black;
+    font-size: 7.5pt;
+    line-height: 1.25;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.tcg-header {
+  border-bottom: 1px solid #000;
+  padding-bottom: 2mm;
+  margin-bottom: 2mm;
+}
+
+.tcg-title {
+  font-size: 9pt;
+  font-weight: 700;
+  margin-bottom: 1mm;
+  line-height: 1.1;
+}
+
+.tcg-subtitle {
+  font-size: 6pt;
+  font-style: italic;
+  color: #444;
+}
+
+.tcg-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1mm;
+  margin-bottom: 2mm;
+  font-size: 6.5pt;
+}
+
+.tcg-body {
+  flex-grow: 1;
+  text-align: justify;
+}
+
+.tcg-footer {
+  margin-top: auto;
+  padding-top: 1mm;
+  border-top: 1px solid #ccc;
+  font-size: 5.5pt;
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+}

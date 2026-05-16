@@ -2,12 +2,14 @@ import { useState } from 'react';
 import { useSpells } from './context/SpellContext';
 import { useAuth } from './context/AuthContext';
 import { SpellList } from './components/SpellList';
+import { PrintView } from './components/PrintView';
 
 function App() {
   const { spells, deck, favorites, loadingSpells, loadingUser } = useSpells();
   const { user, signOut } = useAuth();
 
   const [activeTab, setActiveTab] = useState<'catalog' | 'deck' | 'favorites'>('catalog');
+  const [isPrinting, setIsPrinting] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [levelFilter, setLevelFilter] = useState<number | null>(null);
   const [schoolFilter, setSchoolFilter] = useState('');
@@ -44,7 +46,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <header>
+      <header className={isPrinting ? 'no-print' : ''}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1rem' }}>
           <div>
             <h1>Myranor Zauber</h1>
@@ -54,6 +56,13 @@ function App() {
             <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
               {user?.email}
             </span>
+            <button
+              className="btn"
+              onClick={() => setIsPrinting(!isPrinting)}
+              style={{ fontSize: '0.85rem', padding: '0.4rem 0.9rem' }}
+            >
+              {isPrinting ? 'Zurück' : 'Druckansicht'}
+            </button>
             <button
               className="btn"
               onClick={signOut}
@@ -66,6 +75,10 @@ function App() {
       </header>
 
       <main>
+        {isPrinting ? (
+          <PrintView spells={displaySpells} />
+        ) : (
+          <>
         {/* Tab bar + filters */}
         <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
 
@@ -208,6 +221,8 @@ function App() {
                   : 'Du hast noch keine Favoriten.'
               }
             />
+          </>
+        )}
           </>
         )}
       </main>
