@@ -1,6 +1,7 @@
 import React from 'react';
 import { useAuth } from './context/AuthContext';
 import { LoginPage } from './pages/LoginPage';
+import { UpdatePasswordPage } from './pages/UpdatePasswordPage';
 import App from './App';
 
 /**
@@ -9,7 +10,7 @@ import App from './App';
  * then shows LoginPage for unauthenticated users and App for authenticated ones.
  */
 export const Root: React.FC = () => {
-  const { session, loading } = useAuth();
+  const { session, loading, isRecoveringPassword } = useAuth();
 
   if (loading) {
     return (
@@ -33,6 +34,10 @@ export const Root: React.FC = () => {
         <span>Laden…</span>
       </div>
     );
+  }
+
+  if (isRecoveringPassword) {
+    return <UpdatePasswordPage />;
   }
 
   return session ? <App /> : <LoginPage />;
