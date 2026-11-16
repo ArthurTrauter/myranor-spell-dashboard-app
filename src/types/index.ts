@@ -59,12 +59,13 @@ export interface Spell {
 export interface SpellContextType {
   spells: Spell[];
   deck: string[];
+  deckSources: Record<string, string[] | null>;
   favorites: string[];
   /** True while the initial spells list is being fetched from Supabase */
   loadingSpells: boolean;
   /** True while per-user deck/favorites data is being fetched */
   loadingUser: boolean;
-  addToDeck: (id: string) => Promise<void>;
+  addToDeck: (id: string, sources?: string[] | null) => Promise<void>;
   removeFromDeck: (id: string) => Promise<void>;
   toggleFavorite: (id: string) => Promise<void>;
 }
