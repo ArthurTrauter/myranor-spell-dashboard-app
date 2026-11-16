@@ -126,6 +126,49 @@ h1 {
 }
 
 /* Card Grid */
+.deck-source-picker > p {
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.deck-source-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.deck-source-picker .multiselect-filter {
+  min-width: 0;
+}
+
+.deck-source-picker .multiselect-filter-menu {
+  position: static;
+  margin-top: 0.5rem;
+  box-shadow: none;
+}
+
+.deck-source-actions .btn {
+  flex: 1;
+}
+
+.spell-card .btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.deck-source-picker .deck-source-hint {
+  margin: 0.5rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.deck-source-error {
+  margin-top: 0.75rem;
+  color: #fca5a5;
+  font-size: 0.85rem;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -142,6 +185,93 @@ h1 {
 option {
   background: var(--bg-surface);
   color: var(--text-main);
+}
+
+.multiselect-filter {
+  position: relative;
+  padding: 0.5rem;
+  min-width: min(220px, 100%);
+  max-width: 100%;
+  flex: 1;
+  align-self: flex-start;
+}
+
+.multiselect-filter[open] {
+  z-index: 1;
+}
+
+.multiselect-filter summary {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+
+.multiselect-filter summary:focus-visible,
+.multiselect-filter-option:focus-within {
+  outline: 2px solid var(--primary-hover);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.multiselect-filter-menu {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.multiselect-filter-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.multiselect-filter-actions .btn {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+.multiselect-filter-actions .btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+  background: var(--bg-surface-hover);
+}
+
+.multiselect-filter-options {
+  border: none;
+  max-height: 280px;
+  overflow-y: auto;
+  padding: 0.25rem;
+}
+
+.multiselect-filter-options legend {
+  margin-bottom: 0.5rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.multiselect-filter-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.multiselect-filter-option:hover {
+  background: var(--bg-surface-hover);
+}
+
+.multiselect-filter-option input {
+  accent-color: var(--primary);
 }
 
 /* --- Print & TCG Layout --- */
@@ -240,30 +370,147 @@ option {
 }
 
 .tcg-header {
-  border-bottom: 1px solid #000;
-  padding-bottom: 2mm;
-  margin-bottom: 2mm;
+  flex-shrink: 0;
+  margin-bottom: 1mm;
+}
+
+.tcg-title-row {
+  display: flex;
+  align-items: center;
+  margin: 1mm 0 1mm;
+}
+
+.tcg-grade {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  flex: 0 0 11mm;
+  height: 10mm;
+  margin: -1mm 0 -1mm -3mm;
+  color: #111;
+  font-size: 17pt;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.tcg-grade-shape {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tcg-grade > span {
+  position: relative;
 }
 
 .tcg-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.5mm;
+  flex: 1;
+  min-width: 0;
+  min-height: 8mm;
+  padding: 0.5mm 1.5mm;
+  background: #111;
+  color: white;
   font-size: 9pt;
   font-weight: 700;
-  margin-bottom: 1mm;
   line-height: 1.1;
+  overflow-wrap: anywhere;
+}
+
+.tcg-title-row--with-grade .tcg-title {
+  padding-right: 4mm;
+}
+
+.tcg-subtitle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1mm;
+  width: 100%;
+}
+
+.tcg-header-icons {
+  display: inline-flex;
+  align-items: center;
+  gap: 1mm;
+  flex-shrink: 0;
+}
+
+.tcg-header-icon {
+  width: 3mm;
+  height: 3mm;
+  flex-shrink: 0;
 }
 
 .tcg-subtitle {
   font-size: 6pt;
+  font-weight: 400;
   font-style: italic;
-  color: #444;
+  color: inherit;
 }
 
 .tcg-stats {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1mm;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1mm 1.5mm;
+  flex-shrink: 0;
   margin-bottom: 2mm;
-  font-size: 6.5pt;
+}
+
+.tcg-stat {
+  display: grid;
+  grid-template-columns: 6mm minmax(0, 1fr);
+  align-items: center;
+  gap: 0;
+}
+
+.tcg-stat-icon-circle {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6mm;
+  height: 6mm;
+  border: 0.25mm solid #111;
+  border-radius: 50%;
+  background: #111;
+  color: white;
+}
+
+.tcg-stat-icon {
+  width: 3.75mm;
+  height: 3.75mm;
+}
+
+.tcg-stat-value {
+  display: flex;
+  align-items: center;
+  min-height: 5mm;
+  margin-left: -3mm;
+  padding: 0.5mm 1mm 0.5mm 4mm;
+  border: 0.25mm solid #666;
+  border-radius: 1mm;
+  font-size: 7.5pt;
+  font-weight: 600;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.tcg-stat-detail {
+  display: block;
+  margin-top: 0.5mm;
+  font-size: 6pt;
+  font-weight: 400;
+  line-height: 1.2;
 }
 
 .tcg-body {

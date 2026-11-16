@@ -1,6 +1,8 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import { Spell } from '../types';
 import { useSpells } from '../context/SpellContext';
+import { MultiselectFilter } from './MultiselectFilter';
+import { availableDeckSources, isSourceIndependent, spellWithDeckSources } from '../lib/deckSources';
 
 interface SpellCardProps {
   spell: Spell;
@@ -34,10 +36,30 @@ function formatComponents(spell: Spell): string {
 }
 
 export const SpellCard: FC<SpellCardProps> = ({ spell }) => {
-  const { deck, favorites, addToDeck, removeFromDeck, toggleFavorite } = useSpells();
+  const { deck, deckSources, favorites, addToDeck, removeFromDeck, toggleFavorite } = useSpells();
+  const [showSourcePicker, setShowSourcePicker] = useState(false);
+  const [selectedSources, setSelectedSources] = useState<string[] | null>(null);
+  const [savingDeck, setSavingDeck] = useState(false);
+  const [deckError, setDeckError] = useState('');
 
   const isFavorite = favorites.includes(spell.id);
   const inDeck = deck.includes(spell.id);
+  const availableSources = availableDeckSources(spell);
+  const displayedSpell = inDeck ? spellWithDeckSources(spell, deckSources[spell.id] ?? null) : spell;
+  const sourcesLabel = inDeck && !isSourceIndependent(spell) ? 'Deck-Quellen' : 'Quellen';
+
+  const saveDeck = async (action: () => Promise<void>) => {
+    setSavingDeck(true);
+    setDeckError('');
+    try {
+      await action();
+      setShowSourcePicker(false);
+    } catch (error) {
+      setDeckError(error instanceof Error ? error.message : 'Das Deck konnte nicht gespeichert werden.');
+    } finally {
+      setSavingDeck(false);
+    }
+  };
 
   const levelLabel = spell.level === 0
     ? 'Zaubertrick'
@@ -76,13 +98,13 @@ export const SpellCard: FC<SpellCardProps> = ({ spell }) => {
         <div><strong>Komp.:</strong> {formatComponents(spell)}</div>
       </div>
 
-      {spell.sources_display ? (
+      {displayedSpell.sources_display ? (
         <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-          <strong>Quellen:</strong> {spell.sources_display}
+          <strong>{sourcesLabel}:</strong> {displayedSpell.sources_display}
         </div>
-      ) : spell.sources.length > 0 && (
+      ) : displayedSpell.sources.length > 0 && (
         <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-          <strong>Quellen:</strong> {spell.sources.join(', ')}
+          <strong>{sourcesLabel}:</strong> {displayedSpell.sources.join(', ')}
         </div>
       )}
 
@@ -106,20 +128,62 @@ export const SpellCard: FC<SpellCardProps> = ({ spell }) => {
         {inDeck ? (
           <button
             className="btn"
-            onClick={() => removeFromDeck(spell.id)}
+            disabled={savingDeck}
+            onClick={() => void saveDeck(() => removeFromDeck(spell.id))}
             style={{ width: '100%', background: 'var(--bg-surface-hover)', border: '1px solid var(--primary)' }}
           >
             Aus dem Deck entfernen
           </button>
+        ) : showSourcePicker ? (
+          <div className="deck-source-picker">
+            <p>Quellen für mein Deck</p>
+            <MultiselectFilter
+              label="Quellen"
+              options={availableSources}
+              selection={selectedSources}
+              onChange={setSelectedSources}
+            />
+            {selectedSources?.length === 0 && (
+              <p className="deck-source-hint">Wähle mindestens eine Quelle aus.</p>
+            )}
+            <div className="deck-source-actions">
+              <button
+                type="button"
+                className="btn btn-primary"
+                disabled={savingDeck || selectedSources?.length === 0}
+                onClick={() => void saveDeck(() => addToDeck(spell.id, selectedSources))}
+              >
+                {savingDeck ? 'Speichern…' : 'Zum Deck hinzufügen'}
+              </button>
+              <button
+                type="button"
+                className="btn"
+                disabled={savingDeck}
+                onClick={() => { setShowSourcePicker(false); setDeckError(''); }}
+              >
+                Abbrechen
+              </button>
+            </div>
+          </div>
         ) : (
           <button
             className="btn btn-primary"
-            onClick={() => addToDeck(spell.id)}
+            disabled={savingDeck}
+            onClick={() => {
+              if (availableSources.length === 0) {
+                void saveDeck(() => addToDeck(spell.id));
+              } else {
+                setSelectedSources(null);
+                setDeckError('');
+                setShowSourcePicker(true);
+              }
+            }}
             style={{ width: '100%' }}
           >
-            Zum Deck hinzufügen
+            {savingDeck ? 'Speichern…' : 'Zum Deck hinzufügen'}
           </button>
         )}
+        {deckError && <p className="deck-source-error" role="alert">{deckError}</p>}
       </div>
     </div>
   );

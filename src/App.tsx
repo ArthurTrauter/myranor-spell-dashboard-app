@@ -3,22 +3,28 @@ import { useSpells } from './context/SpellContext';
 import { useAuth } from './context/AuthContext';
 import { SpellList } from './components/SpellList';
 import { PrintView } from './components/PrintView';
+import { MultiselectFilter } from './components/MultiselectFilter';
+import { spellWithDeckSources } from './lib/deckSources';
 
 function App() {
-  const { spells, deck, favorites, loadingSpells, loadingUser } = useSpells();
+  const { spells, deck, deckSources, favorites, loadingSpells, loadingUser } = useSpells();
   const { user, signOut } = useAuth();
 
   const [activeTab, setActiveTab] = useState<'catalog' | 'deck' | 'favorites'>('catalog');
   const [isPrinting, setIsPrinting] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
-  const [levelFilter, setLevelFilter] = useState<number | null>(null);
-  const [schoolFilter, setSchoolFilter] = useState('');
-  const [sourceFilter, setSourceFilter] = useState('');
+  // null selects all options, including those loaded asynchronously.
+  const [levelFilter, setLevelFilter] = useState<number[] | null>(null);
+  const [schoolFilter, setSchoolFilter] = useState<string[] | null>(null);
+  const [sourceFilter, setSourceFilter] = useState<string[] | null>(null);
 
   // Unique schools, levels, and sources for filter dropdowns
   const schools = [...new Set(spells.map(s => s.school))].sort();
   const levels = [...new Set(spells.map(s => s.level))].sort((a, b) => a - b);
   const sources = [...new Set(spells.flatMap(s => s.sources))].sort();
+  const selectedSources = sourceFilter ?? sources;
+  const allSourcesSelected = sourceFilter === null ||
+    (sources.length > 0 && sources.every(source => selectedSources.includes(source)));
 
   const filterSpells = (list: typeof spells) =>
     list.filter(spell => {
@@ -26,13 +32,16 @@ function App() {
         spell.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         spell.school.toLowerCase().includes(searchQuery.toLowerCase()) ||
         spell.sources.some(s => s.toLowerCase().includes(searchQuery.toLowerCase()));
-      const matchesLevel = levelFilter === null || spell.level === levelFilter;
-      const matchesSchool = !schoolFilter || spell.school === schoolFilter;
-      const matchesSource = !sourceFilter || spell.sources.includes(sourceFilter);
+      const matchesLevel = levelFilter === null || levelFilter.includes(spell.level);
+      const matchesSchool = schoolFilter === null || schoolFilter.includes(spell.school);
+      const matchesSource = allSourcesSelected ||
+        spell.sources.some(source => selectedSources.includes(source));
       return matchesSearch && matchesLevel && matchesSchool && matchesSource;
     });
 
-  const deckSpells = spells.filter(s => deck.includes(s.id));
+  const deckSpells = spells
+    .filter(s => deck.includes(s.id))
+    .map(spell => spellWithDeckSources(spell, deckSources[spell.id] ?? null));
   const favoriteSpells = spells.filter(s => favorites.includes(s.id));
 
   const displaySpells =
@@ -79,8 +88,8 @@ function App() {
           <PrintView spells={displaySpells} />
         ) : (
           <>
-        {/* Tab bar + filters */}
-        <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
+        {/* Tabs and search */}
+        <div style={{ display: 'flex', gap: '1rem', marginBottom: '1rem', flexWrap: 'wrap' }}>
 
           {/* Tabs */}
           <div className="glass-panel" style={{ display: 'flex', padding: '0.5rem', gap: '0.5rem', flexGrow: 1 }}>
@@ -123,73 +132,29 @@ function App() {
             />
           </div>
 
-          {/* Level filter */}
-          <div className="glass-panel" style={{ padding: '0.5rem' }}>
-            <select
-              value={levelFilter ?? ''}
-              onChange={e => setLevelFilter(e.target.value === '' ? null : Number(e.target.value))}
-              style={{
-                background: 'transparent',
-                border: 'none',
-                color: 'var(--text-main)',
-                outline: 'none',
-                padding: '0.5rem',
-                fontFamily: 'inherit',
-                cursor: 'pointer',
-              }}
-            >
-              <option value="">Alle Grade</option>
-              {levels.map(l => (
-                <option key={l} value={l}>
-                  {l === 0 ? 'Zaubertrick' : `Grad ${l}`}
-                </option>
-              ))}
-            </select>
-          </div>
+        </div>
 
-          {/* School filter */}
-          <div className="glass-panel" style={{ padding: '0.5rem' }}>
-            <select
-              value={schoolFilter}
-              onChange={e => setSchoolFilter(e.target.value)}
-              style={{
-                background: 'transparent',
-                border: 'none',
-                color: 'var(--text-main)',
-                outline: 'none',
-                padding: '0.5rem',
-                fontFamily: 'inherit',
-                cursor: 'pointer',
-              }}
-            >
-              <option value="">Alle Schulen</option>
-              {schools.map(s => (
-                <option key={s} value={s}>{s}</option>
-              ))}
-            </select>
-          </div>
-
-          {/* Source filter */}
-          <div className="glass-panel" style={{ padding: '0.5rem' }}>
-            <select
-              value={sourceFilter}
-              onChange={e => setSourceFilter(e.target.value)}
-              style={{
-                background: 'transparent',
-                border: 'none',
-                color: 'var(--text-main)',
-                outline: 'none',
-                padding: '0.5rem',
-                fontFamily: 'inherit',
-                cursor: 'pointer',
-              }}
-            >
-              <option value="">Alle Quellen</option>
-              {sources.map(s => (
-                <option key={s} value={s}>{s}</option>
-              ))}
-            </select>
-          </div>
+        {/* Filters */}
+        <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
+          <MultiselectFilter
+            label="Schulen"
+            options={schools}
+            selection={schoolFilter}
+            onChange={setSchoolFilter}
+          />
+          <MultiselectFilter
+            label="Grade"
+            options={levels}
+            selection={levelFilter}
+            onChange={setLevelFilter}
+            formatOption={level => level === 0 ? 'Zaubertrick' : `Grad ${level}`}
+          />
+          <MultiselectFilter
+            label="Quellen"
+            options={sources}
+            selection={sourceFilter}
+            onChange={setSourceFilter}
+          />
         </div>
 
         {/* Loading state */}
